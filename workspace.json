@@ -38,12 +38,12 @@
           ],
           "options": {
             "outputPath": "dist/apps/my-apartment",
-            "index": "apps/my-apartment/src/index.html",
+            "index": "apps/my-apartment/src/public/index.html",
             "main": "apps/my-apartment/src/main.tsx",
             "polyfills": "apps/my-apartment/src/polyfills.ts",
             "tsConfig": "apps/my-apartment/tsconfig.app.json",
             "assets": [
-              "apps/my-apartment/src/favicon.ico",
+              "apps/my-apartment/src/public/favicon.ico",
               "apps/my-apartment/src/assets"
             ],
             "styles": [],
