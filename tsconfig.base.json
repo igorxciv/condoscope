@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@condoscope/models": ["libs/models/src/index.ts"],
+      "@condoscope/ui-kit": ["libs/ui-kit/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

@@ -22,5 +22,32 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "models": {
+      "tags": []
+    },
+    "my-apartment": {
+      "tags": []
+    },
+    "my-apartment-e2e": {
+      "tags": [],
+      "implicitDependencies": ["my-apartment"]
+    },
+    "ui-kit": {
+      "tags": []
+    },
+    "authorization-microservice": {
+      "tags": []
+    },
+    "profile-microservice": {
+      "tags": []
+    },
+    "registration": {
+      "tags": []
+    },
+    "registration-e2e": {
+      "tags": [],
+      "implicitDependencies": ["registration"]
+    }
+  }
 }
