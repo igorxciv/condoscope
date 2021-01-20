@@ -23,11 +23,11 @@ export const defaultTheme: ThemeObject = {
   'button-tiny-padding': '6px',
 
   'button-filled-basic-background': '#EDF1F7',
-  'button-filled-primary-background': '#3366FF',
+  'button-filled-primary-background': '#36F',
   'button-filled-success-background': '#00D68F',
   'button-filled-info-background': '#0095FF',
-  'button-filled-warning-background': '#FFAA00',
+  'button-filled-warning-background': '#FA0',
   'button-filled-danger-background': '#FF3D71',
   'button-filled-basic-color': '#222B45',
-  'button-filled-colorized-color': '#FFFFFF',
+  'button-filled-colorized-color': '#FFF',
 }

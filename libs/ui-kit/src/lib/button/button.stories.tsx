@@ -17,7 +17,7 @@ export const filled: FC = () => {
         Large: 'large',
         Giant: 'giant',
       }, 'medium')}
-      color={select('Color', {
+      status={select('Color', {
         Basic: 'basic',
         Primary: 'primary',
         Success: 'success',

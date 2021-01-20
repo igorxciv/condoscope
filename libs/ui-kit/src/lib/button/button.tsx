@@ -6,11 +6,11 @@ import type { ButtonProps } from './button.types'
 const filled = css<ButtonProps>`
   text-transform: uppercase;
 
-  ${({ theme, color }) => {
-    const textColor = color === 'basic' ? theme['button-filled-basic-color'] : theme['button-filled-colorized-color'] as ThemeKey
+  ${({ theme, status }) => {
+    const textColor = status === 'basic' ? theme['button-filled-basic-color'] : theme['button-filled-colorized-color'] as ThemeKey
 
     return css`
-      background: ${theme[`button-filled-${color}-background`] as ThemeKey};
+      background: ${theme[`button-filled-${status}-background`] as ThemeKey};
       color: ${textColor};
     `}}
 `
@@ -39,12 +39,12 @@ const ButtonStyled = styled.button<ButtonProps>`
 
 export const Button: FC<ButtonProps> = ({
   appearance = 'filled',
-  color = 'basic',
+  status = 'basic',
   size = 'medium',
   children,
 }: PropsWithChildren<ButtonProps>) => {
   return (
-    <ButtonStyled appearance={appearance} color={color} size={size}>
+    <ButtonStyled appearance={appearance} status={status} size={size}>
       {children}
     </ButtonStyled>
   )
