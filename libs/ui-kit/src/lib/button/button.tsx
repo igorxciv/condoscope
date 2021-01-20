@@ -4,6 +4,8 @@ import { ThemeKey } from 'theme/theme.types'
 import type { ButtonProps } from './button.types'
 
 const filled = css<ButtonProps>`
+  text-transform: uppercase;
+
   ${({ theme, color }) => {
     const textColor = color === 'basic' ? theme['button-filled-basic-color'] : theme['button-filled-colorized-color'] as ThemeKey
 
@@ -21,9 +23,7 @@ const appearances = { filled, outline, ghost }
 
 const ButtonStyled = styled.button<ButtonProps>`
   border-radius: 4px;
-  padding: 0;
   border: none;
-  text-transform: uppercase;
 
   ${({ theme, size, appearance }) => css`
     padding: ${theme[`button-${size}-padding`]};
