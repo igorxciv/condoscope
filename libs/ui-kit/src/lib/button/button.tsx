@@ -1,7 +1,7 @@
 import React, { FC, PropsWithChildren } from 'react'
 import styled, { css } from 'styled-components'
-import { ThemeKey } from 'theme/theme.types'
 import type { ButtonProps } from './button.types'
+import { ThemeKey } from '../theme'
 
 const filled = css<ButtonProps>`
   text-transform: uppercase;
@@ -10,8 +10,12 @@ const filled = css<ButtonProps>`
     const textColor = status === 'basic' ? theme['button-filled-basic-color'] : theme['button-filled-colorized-color'] as ThemeKey
 
     return css`
-      background: ${theme[`button-filled-${status}-background`] as ThemeKey};
+      background-color: ${theme[`button-filled-${status}-background`] as ThemeKey};
       color: ${textColor};
+
+      &:hover {
+        background-color: ${theme[`button-filled-${status}-hover-background`] as ThemeKey};
+      }
     `}}
 `
 
@@ -24,6 +28,8 @@ const appearances = { filled, outline, ghost }
 const ButtonStyled = styled.button<ButtonProps>`
   border-radius: 4px;
   border: none;
+  transition: background-color 0.15s ease-in;
+  cursor: pointer;
 
   ${({ theme, size, appearance }) => css`
     padding: ${theme[`button-${size}-padding`]};

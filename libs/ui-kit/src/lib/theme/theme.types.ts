@@ -37,6 +37,16 @@ export interface ThemeObject {
   'button-filled-danger-background': ThemeKeys;
 
   /**
+   * Button Hover
+   */
+  'button-filled-basic-hover-background': ThemeKeys;
+  'button-filled-primary-hover-background': ThemeKeys;
+  'button-filled-success-hover-background': ThemeKeys;
+  'button-filled-info-hover-background': ThemeKeys;
+  'button-filled-warning-hover-background': ThemeKeys;
+  'button-filled-danger-hover-background': ThemeKeys;
+
+  /**
    * Button Colors
    */
   'button-filled-basic-color': ThemeKeys;

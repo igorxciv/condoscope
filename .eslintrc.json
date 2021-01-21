@@ -54,7 +54,7 @@
             "ignoreRegExpLiterals": true
           }
         ],
-        "no-restricted-imports": ["error", {"patterns": ["*.test", "*.spec", ".."]}],
+        "no-restricted-imports": ["error", {"patterns": ["*.test", "*.spec"]}],
         "no-empty": "error",
         "no-unused-vars": "off",
         "no-plusplus": [

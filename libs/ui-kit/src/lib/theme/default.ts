@@ -1,4 +1,5 @@
 import { ThemeObject } from './theme.types'
+import { Colors } from '../common/colors'
 
 export const defaultTheme: ThemeObject = {
   'font-family-primary': 'unquote(\'Open Sans, sans-serif\')',
@@ -22,12 +23,20 @@ export const defaultTheme: ThemeObject = {
   'button-small-padding': '8px',
   'button-tiny-padding': '6px',
 
-  'button-filled-basic-background': '#EDF1F7',
-  'button-filled-primary-background': '#36F',
-  'button-filled-success-background': '#00D68F',
-  'button-filled-info-background': '#0095FF',
-  'button-filled-warning-background': '#FA0',
-  'button-filled-danger-background': '#FF3D71',
-  'button-filled-basic-color': '#222B45',
-  'button-filled-colorized-color': '#FFF',
+  'button-filled-basic-background': Colors.Basic300,
+  'button-filled-primary-background': Colors.Primary500,
+  'button-filled-success-background': Colors.Success500,
+  'button-filled-info-background': Colors.Info500,
+  'button-filled-warning-background': Colors.Warning500,
+  'button-filled-danger-background': Colors.Danger500,
+
+  'button-filled-basic-hover-background': Colors.Basic200,
+  'button-filled-primary-hover-background': Colors.Primary400,
+  'button-filled-success-hover-background': Colors.Success400,
+  'button-filled-info-hover-background': Colors.Info400,
+  'button-filled-warning-hover-background': Colors.Warning400,
+  'button-filled-danger-hover-background': Colors.Danger400,
+
+  'button-filled-basic-color': Colors.Basic800,
+  'button-filled-colorized-color': Colors.Basic100,
 }

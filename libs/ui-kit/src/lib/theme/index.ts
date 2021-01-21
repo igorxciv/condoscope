@@ -11,3 +11,5 @@ export function createTheme(name: keyof typeof themes): DefaultTheme {
     return { name, ...defaultTheme }
   }
 }
+
+export { ThemeKey } from './theme.types'
