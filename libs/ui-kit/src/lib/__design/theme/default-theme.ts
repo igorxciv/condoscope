@@ -1,4 +1,4 @@
-import { transparentize } from 'polished'
+import { rem, transparentize } from 'polished'
 import { ThemeObject } from './theme.types'
 import { Colors } from '../settings'
 
@@ -6,23 +6,23 @@ export const defaultTheme: ThemeObject = {
   'font-family-primary': 'unquote(\'Open Sans, sans-serif\')',
   'font-weight-bold': 700,
 
-  'button-giant-line-height': '24px',
-  'button-large-line-height': '24px',
-  'button-medium-line-height': '20px',
-  'button-small-line-height': '16px',
-  'button-tiny-line-height': '12px',
+  'button-giant-line-height': rem(24),
+  'button-large-line-height': rem(24),
+  'button-medium-line-height': rem(20),
+  'button-small-line-height': rem(16),
+  'button-tiny-line-height': rem(12),
 
-  'button-giant-font-size': '18px',
-  'button-large-font-size': '16px',
-  'button-medium-font-size': '14px',
-  'button-small-font-size': '12px',
-  'button-tiny-font-size': '10px',
+  'button-giant-font-size': rem(18),
+  'button-large-font-size': rem(16),
+  'button-medium-font-size': rem(14),
+  'button-small-font-size': rem(12),
+  'button-tiny-font-size': rem(10),
 
-  'button-giant-padding': '16px',
-  'button-large-padding': '12px',
-  'button-medium-padding': '10px',
-  'button-small-padding': '8px',
-  'button-tiny-padding': '6px',
+  'button-giant-padding': `${rem(16)} ${rem(24)}`,
+  'button-large-padding': `${rem(12)} ${rem(20)}`,
+  'button-medium-padding': `${rem(10)} ${rem(18)}`,
+  'button-small-padding': `${rem(8)} ${rem(16)}`,
+  'button-tiny-padding': `${rem(6)} ${rem(14)}`,
 
   'button-filled-basic-background': Colors.Basic300,
   'button-filled-primary-background': Colors.Primary500,
@@ -45,6 +45,20 @@ export const defaultTheme: ThemeObject = {
   'button-ghost-warning-background': transparentize(1, Colors.Basic100),
   'button-ghost-danger-background': transparentize(1, Colors.Basic100),
 
+  'button-outline-basic-border': Colors.Basic600,
+  'button-outline-primary-border': Colors.Primary500,
+  'button-outline-success-border': Colors.Success500,
+  'button-outline-info-border': Colors.Info500,
+  'button-outline-warning-border': Colors.Warning500,
+  'button-outline-danger-border': Colors.Danger500,
+
+  'button-outline-basic-color': Colors.Basic600,
+  'button-outline-primary-color': Colors.Primary500,
+  'button-outline-success-color': Colors.Success500,
+  'button-outline-info-color': Colors.Info500,
+  'button-outline-warning-color': Colors.Warning500,
+  'button-outline-danger-color': Colors.Danger500,
+
   'button-filled-basic-hover-background': Colors.Basic200,
   'button-filled-primary-hover-background': Colors.Primary400,
   'button-filled-success-hover-background': Colors.Success400,
@@ -54,4 +68,6 @@ export const defaultTheme: ThemeObject = {
 
   'button-filled-basic-color': Colors.Basic800,
   'button-filled-colorized-color': Colors.Basic100,
+
+  'button-radius': rem(4),
 }

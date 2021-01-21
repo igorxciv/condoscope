@@ -9,7 +9,6 @@ const filled = css<ButtonProps>`
     const textColor = status === 'basic' ? theme['button-filled-basic-color'] : theme['button-filled-colorized-color']
 
     return css`
-      background-color: ${theme[`button-filled-${status}-background`]};
       color: ${textColor};
 
       &:hover {
@@ -22,23 +21,24 @@ const outline = css<ButtonProps>`
   text-transform: uppercase;
 
   ${({ theme, status }) => css`
-    background-color: ${theme[`button-outline-${status}-background`]};
+    border: 1px solid ${theme[`button-outline-${status}-border`]};
+    color: ${theme[`button-outline-${status}-color`]};
   `}
 `
 
 const ghost = css<ButtonProps>`
-  ${({ theme, status }) => css`
-    background-color: ${theme[`button-ghost-${status}-background`]};
-  `}
+  ${() => css``}
 `
 
 const appearances = { filled, outline, ghost }
 
 const ButtonStyle = css<ButtonProps>`
-  ${({ theme, appearance, size }) => css`
-    border-radius: 4px;
+  ${({ theme, appearance, size, status }) => css`
+    border-radius: ${theme['button-radius']};
     border: none;
     cursor: pointer;
+
+    background-color: ${theme[`button-${appearance}-${status}-background`]};
 
     font-family: ${theme['font-family-primary']};
     font-weight: ${theme['font-weight-bold']};

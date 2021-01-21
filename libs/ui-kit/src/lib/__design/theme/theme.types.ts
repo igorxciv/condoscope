@@ -8,7 +8,11 @@ export interface ThemeObject {
   'font-weight-bold': number;
 
   /**
-   * Button Sizes
+   * Buttons
+   */
+
+  /**
+   * General
    */
   'button-giant-line-height': string;
   'button-large-line-height': string;
@@ -17,7 +21,7 @@ export interface ThemeObject {
   'button-tiny-line-height': string;
 
   /**
-   * Button Paddings
+   * Paddings
    */
   'button-giant-padding': string;
   'button-large-padding': string;
@@ -26,7 +30,25 @@ export interface ThemeObject {
   'button-tiny-padding': string;
 
   /**
-   * Button Backgrounds
+   * Font Size
+   */
+  'button-giant-font-size': string;
+  'button-large-font-size': string;
+  'button-medium-font-size': string;
+  'button-small-font-size': string;
+  'button-tiny-font-size': string;
+
+  /**
+   * Shape
+   */
+  'button-radius': string;
+
+  /**
+   * Filled
+   */
+
+  /**
+   * Backgrounds
    */
   'button-filled-basic-background': Colors;
   'button-filled-primary-background': Colors;
@@ -35,22 +57,8 @@ export interface ThemeObject {
   'button-filled-warning-background': Colors;
   'button-filled-danger-background': Colors;
 
-  'button-outline-basic-background': string;
-  'button-outline-primary-background': string;
-  'button-outline-success-background': string;
-  'button-outline-info-background': string;
-  'button-outline-warning-background': string;
-  'button-outline-danger-background': string;
-
-  'button-ghost-basic-background': string;
-  'button-ghost-primary-background': string;
-  'button-ghost-success-background': string;
-  'button-ghost-info-background': string;
-  'button-ghost-warning-background': string;
-  'button-ghost-danger-background': string;
-
   /**
-   * Button Hover
+   * Hover
    */
   'button-filled-basic-hover-background': Colors;
   'button-filled-primary-hover-background': Colors;
@@ -60,17 +68,56 @@ export interface ThemeObject {
   'button-filled-danger-hover-background': Colors;
 
   /**
-   * Button Colors
+   * Colors
    */
   'button-filled-basic-color': Colors;
   'button-filled-colorized-color': Colors;
 
   /**
-   * Button Font
+   * Button Outline
    */
-  'button-giant-font-size': string;
-  'button-large-font-size': string;
-  'button-medium-font-size': string;
-  'button-small-font-size': string;
-  'button-tiny-font-size': string;
+
+  /**
+   * Backgrounds
+   */
+  'button-outline-basic-background': string;
+  'button-outline-primary-background': string;
+  'button-outline-success-background': string;
+  'button-outline-info-background': string;
+  'button-outline-warning-background': string;
+  'button-outline-danger-background': string;
+
+  /**
+   * Borders
+   */
+  'button-outline-basic-border': Colors;
+  'button-outline-primary-border': Colors;
+  'button-outline-success-border': Colors;
+  'button-outline-info-border': Colors;
+  'button-outline-warning-border': Colors;
+  'button-outline-danger-border': Colors;
+
+  /**
+   * Colors
+   */
+  'button-outline-basic-color': Colors;
+  'button-outline-primary-color': Colors;
+  'button-outline-success-color': Colors;
+  'button-outline-info-color': Colors;
+  'button-outline-warning-color': Colors;
+  'button-outline-danger-color': Colors;
+
+  /**
+   * Button Ghost
+   */
+
+  /**
+   * Backgrounds
+   */
+  'button-ghost-basic-background': string;
+  'button-ghost-primary-background': string;
+  'button-ghost-success-background': string;
+  'button-ghost-info-background': string;
+  'button-ghost-warning-background': string;
+  'button-ghost-danger-background': string;
 }
