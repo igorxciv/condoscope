@@ -3,7 +3,6 @@ import { ButtonProps } from './button.types'
 import { propertyAnimation } from '../__design/utils'
 
 const filled = css<ButtonProps>`
-  text-transform: uppercase;
 
   ${({ theme, status }) => {
     const textColor = status === 'basic' ? theme['button-filled-basic-color'] : theme['button-filled-colorized-color']
@@ -14,8 +13,6 @@ const filled = css<ButtonProps>`
 }`
 
 const outline = css<ButtonProps>`
-  text-transform: uppercase;
-
   ${({ theme, status }) => css`
     border: 1px solid ${theme[`button-outline-${status}-border`]};
     color: ${theme[`button-outline-${status}-color`]};
@@ -23,7 +20,9 @@ const outline = css<ButtonProps>`
 `
 
 const ghost = css<ButtonProps>`
-  ${() => css``}
+  ${({ theme, status }) => css`
+    color: ${theme[`button-ghost-${status}-color`]};
+  `}
 `
 
 const appearances = { filled, outline, ghost }
@@ -33,6 +32,7 @@ const ButtonStyle = css<ButtonProps>`
     border-radius: ${theme['button-radius']};
     border: none;
     cursor: pointer;
+    text-transform: uppercase;
 
     background-color: ${theme[`button-${appearance}-${status}-background`]};
 

@@ -130,4 +130,14 @@ export interface ThemeObject {
   'button-ghost-info-background': string;
   'button-ghost-warning-background': string;
   'button-ghost-danger-background': string;
+
+  /**
+   * Colors
+   */
+  'button-ghost-basic-color': Colors;
+  'button-ghost-primary-color': Colors;
+  'button-ghost-success-color': Colors;
+  'button-ghost-info-color': Colors;
+  'button-ghost-warning-color': Colors;
+  'button-ghost-danger-color': Colors;
 }

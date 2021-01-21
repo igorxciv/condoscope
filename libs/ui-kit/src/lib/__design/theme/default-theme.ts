@@ -76,5 +76,12 @@ export const defaultTheme: ThemeObject = {
   'button-ghost-warning-background': transparentize(1, Colors.Basic100),
   'button-ghost-danger-background': transparentize(1, Colors.Basic100),
 
+  'button-ghost-basic-color': Colors.Basic800,
+  'button-ghost-primary-color': Colors.Primary500,
+  'button-ghost-success-color': Colors.Success500,
+  'button-ghost-info-color': Colors.Info500,
+  'button-ghost-warning-color': Colors.Warning500,
+  'button-ghost-danger-color': Colors.Danger500,
+
   'button-radius': rem(4),
 }
