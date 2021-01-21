@@ -14,6 +14,10 @@ const filled = css<ButtonProps>`
       &:hover {
         background-color: ${theme[`button-filled-${status}-hover-background`]};
       }
+
+      &:active {
+        background-color: ${theme[`button-filled-${status}-active-background`]};
+      }
   `}
 }`
 
@@ -26,6 +30,10 @@ const outline = css<ButtonProps>`
     &:hover {
       background-color: ${theme[`button-outline-${status}-hover-background`]};
     }
+
+    &:active {
+      background-color: ${theme[`button-outline-${status}-active-background`]};
+    }
   `}
 `
 
@@ -36,6 +44,10 @@ const ghost = css<ButtonProps>`
 
     &:hover {
       background-color: ${theme['button-ghost-hover-background']};
+    }
+
+    &:active {
+      background-color: ${theme['button-ghost-active-background']};
     }
   `}
 `

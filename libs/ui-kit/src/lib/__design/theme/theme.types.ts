@@ -68,6 +68,16 @@ export interface ThemeObject {
   'button-filled-danger-hover-background': Colors;
 
   /**
+   * Active
+   */
+  'button-filled-basic-active-background': Colors;
+  'button-filled-primary-active-background': Colors;
+  'button-filled-success-active-background': Colors;
+  'button-filled-info-active-background': Colors;
+  'button-filled-warning-active-background': Colors;
+  'button-filled-danger-active-background': Colors;
+
+  /**
    * Colors
    */
   'button-filled-basic-color': Colors;
@@ -96,6 +106,16 @@ export interface ThemeObject {
   'button-outline-info-hover-background': string;
   'button-outline-warning-hover-background': string;
   'button-outline-danger-hover-background': string;
+
+  /**
+   * Active
+   */
+  'button-outline-basic-active-background': string;
+  'button-outline-primary-active-background': string;
+  'button-outline-success-active-background': string;
+  'button-outline-info-active-background': string;
+  'button-outline-warning-active-background': string;
+  'button-outline-danger-active-background': string;
 
   /**
    * Borders
@@ -140,4 +160,9 @@ export interface ThemeObject {
    * Hover
    */
   'button-ghost-hover-background': string;
+
+  /**
+   * Active
+   */
+  'button-ghost-active-background': string;
 }
