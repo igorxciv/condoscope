@@ -88,6 +88,16 @@ export interface ThemeObject {
   'button-outline-danger-background': string;
 
   /**
+   * Hover
+   */
+  'button-outline-basic-hover-background': string;
+  'button-outline-primary-hover-background': string;
+  'button-outline-success-hover-background': string;
+  'button-outline-info-hover-background': string;
+  'button-outline-warning-hover-background': string;
+  'button-outline-danger-hover-background': string;
+
+  /**
    * Borders
    */
   'button-outline-basic-border': Colors;

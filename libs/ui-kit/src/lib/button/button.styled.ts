@@ -10,12 +10,8 @@ const filled = css<ButtonProps>`
 
     return css`
       color: ${textColor};
-
-      &:hover {
-        background-color: ${theme[`button-filled-${status}-hover-background`]};
-      }
-    `}}
-`
+  `}
+}`
 
 const outline = css<ButtonProps>`
   text-transform: uppercase;
@@ -49,6 +45,10 @@ const ButtonStyle = css<ButtonProps>`
     line-height: ${theme[`button-${size}-line-height`]};
 
     ${propertyAnimation(['background-color'])}
+
+    &:hover {
+      background-color: ${theme[`button-${appearance}-${status}-hover-background`]};
+    }
 
     ${appearances[appearance]}
   `}
