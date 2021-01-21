@@ -77,6 +77,13 @@ export interface ThemeObject {
   'button-filled-warning-focus-background': Colors;
   'button-filled-danger-focus-background': Colors;
 
+  'button-filled-basic-focus-border': Colors;
+  'button-filled-primary-focus-border': Colors;
+  'button-filled-success-focus-border': Colors;
+  'button-filled-info-focus-border': Colors;
+  'button-filled-warning-focus-border': Colors;
+  'button-filled-danger-focus-border': Colors;
+
   /**
    * Colors
    */

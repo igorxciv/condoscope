@@ -38,12 +38,19 @@ export const defaultTheme: ThemeObject = {
   'button-filled-warning-hover-background': Colors.Warning400,
   'button-filled-danger-hover-background': Colors.Danger400,
 
-  'button-filled-basic-focus-background': Colors.Basic300,
+  'button-filled-basic-focus-background': Colors.Basic400,
   'button-filled-primary-focus-background': Colors.Primary600,
   'button-filled-success-focus-background': Colors.Success600,
   'button-filled-info-focus-background': Colors.Info600,
   'button-filled-warning-focus-background': Colors.Warning600,
   'button-filled-danger-focus-background': Colors.Danger600,
+
+  'button-filled-basic-focus-border': Colors.Basic500,
+  'button-filled-primary-focus-border': Colors.Basic700,
+  'button-filled-success-focus-border': Colors.Success700,
+  'button-filled-info-focus-border': Colors.Info700,
+  'button-filled-warning-focus-border': Colors.Warning700,
+  'button-filled-danger-focus-border': Colors.Danger700,
 
   'button-filled-basic-color': Colors.Basic800,
   'button-filled-colorized-color': Colors.Basic100,
