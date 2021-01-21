@@ -69,12 +69,7 @@ export const defaultTheme: ThemeObject = {
   'button-outline-warning-color': Colors.Warning500,
   'button-outline-danger-color': Colors.Danger500,
 
-  'button-ghost-basic-background': transparentize(1, Colors.Basic100),
-  'button-ghost-primary-background': transparentize(1, Colors.Basic100),
-  'button-ghost-success-background': transparentize(1, Colors.Basic100),
-  'button-ghost-info-background': transparentize(1, Colors.Basic100),
-  'button-ghost-warning-background': transparentize(1, Colors.Basic100),
-  'button-ghost-danger-background': transparentize(1, Colors.Basic100),
+  'button-ghost-background': transparentize(1, Colors.Basic100),
 
   'button-ghost-basic-color': Colors.Basic800,
   'button-ghost-primary-color': Colors.Primary500,
@@ -82,6 +77,8 @@ export const defaultTheme: ThemeObject = {
   'button-ghost-info-color': Colors.Info500,
   'button-ghost-warning-color': Colors.Warning500,
   'button-ghost-danger-color': Colors.Danger500,
+
+  'button-ghost-hover-background': transparentize(0.84, Colors.Basic600),
 
   'button-radius': rem(4),
 }

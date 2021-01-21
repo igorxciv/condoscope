@@ -9,6 +9,11 @@ const filled = css<ButtonProps>`
 
     return css`
       color: ${textColor};
+      background-color: ${theme[`button-filled-${status}-background`]};
+
+      &:hover {
+        background-color: ${theme[`button-filled-${status}-hover-background`]};
+      }
   `}
 }`
 
@@ -16,25 +21,33 @@ const outline = css<ButtonProps>`
   ${({ theme, status }) => css`
     border: 1px solid ${theme[`button-outline-${status}-border`]};
     color: ${theme[`button-outline-${status}-color`]};
+    background-color: ${theme[`button-outline-${status}-background`]};
+
+    &:hover {
+      background-color: ${theme[`button-outline-${status}-hover-background`]};
+    }
   `}
 `
 
 const ghost = css<ButtonProps>`
   ${({ theme, status }) => css`
     color: ${theme[`button-ghost-${status}-color`]};
+    background-color: ${theme['button-ghost-background']};
+
+    &:hover {
+      background-color: ${theme['button-ghost-hover-background']};
+    }
   `}
 `
 
 const appearances = { filled, outline, ghost }
 
 const ButtonStyle = css<ButtonProps>`
-  ${({ theme, appearance, size, status }) => css`
+  ${({ theme, appearance, size }) => css`
     border-radius: ${theme['button-radius']};
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-
-    background-color: ${theme[`button-${appearance}-${status}-background`]};
 
     font-family: ${theme['font-family-primary']};
     font-weight: ${theme['font-weight-bold']};
@@ -45,10 +58,6 @@ const ButtonStyle = css<ButtonProps>`
     line-height: ${theme[`button-${size}-line-height`]};
 
     ${propertyAnimation(['background-color'])}
-
-    &:hover {
-      background-color: ${theme[`button-${appearance}-${status}-hover-background`]};
-    }
 
     ${appearances[appearance]}
   `}

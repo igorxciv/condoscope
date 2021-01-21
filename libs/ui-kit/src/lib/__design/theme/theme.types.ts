@@ -124,12 +124,7 @@ export interface ThemeObject {
   /**
    * Backgrounds
    */
-  'button-ghost-basic-background': string;
-  'button-ghost-primary-background': string;
-  'button-ghost-success-background': string;
-  'button-ghost-info-background': string;
-  'button-ghost-warning-background': string;
-  'button-ghost-danger-background': string;
+  'button-ghost-background': string;
 
   /**
    * Colors
@@ -140,4 +135,9 @@ export interface ThemeObject {
   'button-ghost-info-color': Colors;
   'button-ghost-warning-color': Colors;
   'button-ghost-danger-color': Colors;
+
+  /**
+   * Hover
+   */
+  'button-ghost-hover-background': string;
 }
