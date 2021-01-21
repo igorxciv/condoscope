@@ -1,5 +1,5 @@
 import { ThemeObject } from './theme.types'
-import { Colors } from '../common/colors'
+import { Colors } from '../settings'
 
 export const defaultTheme: ThemeObject = {
   'font-family-primary': 'unquote(\'Open Sans, sans-serif\')',
