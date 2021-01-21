@@ -42,6 +42,13 @@ export interface ThemeObject {
   'button-outline-warning-background': string;
   'button-outline-danger-background': string;
 
+  'button-ghost-basic-background': string;
+  'button-ghost-primary-background': string;
+  'button-ghost-success-background': string;
+  'button-ghost-info-background': string;
+  'button-ghost-warning-background': string;
+  'button-ghost-danger-background': string;
+
   /**
    * Button Hover
    */

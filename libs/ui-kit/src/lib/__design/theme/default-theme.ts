@@ -38,6 +38,13 @@ export const defaultTheme: ThemeObject = {
   'button-outline-warning-background': transparentize(0.92, Colors.Warning500),
   'button-outline-danger-background': transparentize(0.92, Colors.Danger500),
 
+  'button-ghost-basic-background': transparentize(1, Colors.Basic100),
+  'button-ghost-primary-background': transparentize(1, Colors.Basic100),
+  'button-ghost-success-background': transparentize(1, Colors.Basic100),
+  'button-ghost-info-background': transparentize(1, Colors.Basic100),
+  'button-ghost-warning-background': transparentize(1, Colors.Basic100),
+  'button-ghost-danger-background': transparentize(1, Colors.Basic100),
+
   'button-filled-basic-hover-background': Colors.Basic200,
   'button-filled-primary-hover-background': Colors.Primary400,
   'button-filled-success-hover-background': Colors.Success400,
