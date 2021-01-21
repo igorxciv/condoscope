@@ -68,14 +68,14 @@ export interface ThemeObject {
   'button-filled-danger-hover-background': Colors;
 
   /**
-   * Active
+   * Focus
    */
-  'button-filled-basic-active-background': Colors;
-  'button-filled-primary-active-background': Colors;
-  'button-filled-success-active-background': Colors;
-  'button-filled-info-active-background': Colors;
-  'button-filled-warning-active-background': Colors;
-  'button-filled-danger-active-background': Colors;
+  'button-filled-basic-focus-background': Colors;
+  'button-filled-primary-focus-background': Colors;
+  'button-filled-success-focus-background': Colors;
+  'button-filled-info-focus-background': Colors;
+  'button-filled-warning-focus-background': Colors;
+  'button-filled-danger-focus-background': Colors;
 
   /**
    * Colors
@@ -108,14 +108,14 @@ export interface ThemeObject {
   'button-outline-danger-hover-background': string;
 
   /**
-   * Active
+   * Focus
    */
-  'button-outline-basic-active-background': string;
-  'button-outline-primary-active-background': string;
-  'button-outline-success-active-background': string;
-  'button-outline-info-active-background': string;
-  'button-outline-warning-active-background': string;
-  'button-outline-danger-active-background': string;
+  'button-outline-basic-focus-background': string;
+  'button-outline-primary-focus-background': string;
+  'button-outline-success-focus-background': string;
+  'button-outline-info-focus-background': string;
+  'button-outline-warning-focus-background': string;
+  'button-outline-danger-focus-background': string;
 
   /**
    * Borders
@@ -162,7 +162,7 @@ export interface ThemeObject {
   'button-ghost-hover-background': string;
 
   /**
-   * Active
+   * Focus
    */
-  'button-ghost-active-background': string;
+  'button-ghost-focus-background': string;
 }

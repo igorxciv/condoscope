@@ -38,12 +38,12 @@ export const defaultTheme: ThemeObject = {
   'button-filled-warning-hover-background': Colors.Warning400,
   'button-filled-danger-hover-background': Colors.Danger400,
 
-  'button-filled-basic-active-background': Colors.Basic200,
-  'button-filled-primary-active-background': Colors.Primary600,
-  'button-filled-success-active-background': Colors.Success600,
-  'button-filled-info-active-background': Colors.Info600,
-  'button-filled-warning-active-background': Colors.Warning600,
-  'button-filled-danger-active-background': Colors.Danger600,
+  'button-filled-basic-focus-background': Colors.Basic300,
+  'button-filled-primary-focus-background': Colors.Primary600,
+  'button-filled-success-focus-background': Colors.Success600,
+  'button-filled-info-focus-background': Colors.Info600,
+  'button-filled-warning-focus-background': Colors.Warning600,
+  'button-filled-danger-focus-background': Colors.Danger600,
 
   'button-filled-basic-color': Colors.Basic800,
   'button-filled-colorized-color': Colors.Basic100,
@@ -62,12 +62,12 @@ export const defaultTheme: ThemeObject = {
   'button-outline-warning-hover-background': transparentize(0.84, Colors.Warning500),
   'button-outline-danger-hover-background': transparentize(0.84, Colors.Danger500),
 
-  'button-outline-basic-active-background': transparentize(0.76, Colors.Basic600),
-  'button-outline-primary-active-background': transparentize(0.76, Colors.Primary600),
-  'button-outline-success-active-background': transparentize(0.76, Colors.Success600),
-  'button-outline-info-active-background': transparentize(0.76, Colors.Info600),
-  'button-outline-warning-active-background': transparentize(0.76, Colors.Warning600),
-  'button-outline-danger-active-background': transparentize(0.76, Colors.Danger600),
+  'button-outline-basic-focus-background': transparentize(0.76, Colors.Basic600),
+  'button-outline-primary-focus-background': transparentize(0.76, Colors.Primary600),
+  'button-outline-success-focus-background': transparentize(0.76, Colors.Success600),
+  'button-outline-info-focus-background': transparentize(0.76, Colors.Info600),
+  'button-outline-warning-focus-background': transparentize(0.76, Colors.Warning600),
+  'button-outline-danger-focus-background': transparentize(0.76, Colors.Danger600),
 
   'button-outline-basic-border': Colors.Basic600,
   'button-outline-primary-border': Colors.Primary500,
@@ -93,7 +93,7 @@ export const defaultTheme: ThemeObject = {
   'button-ghost-danger-color': Colors.Danger500,
 
   'button-ghost-hover-background': transparentize(0.84, Colors.Basic600),
-  'button-ghost-active-background': transparentize(0.84, Colors.Basic600),
+  'button-ghost-focus-background': transparentize(0.84, Colors.Basic600),
 
   'button-radius': rem(4),
 }
