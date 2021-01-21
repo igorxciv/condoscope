@@ -18,7 +18,16 @@ const filled = css<ButtonProps>`
     `}}
 `
 
-const outline = css<ButtonProps>``
+const outline = css<ButtonProps>`
+  text-transform: uppercase;
+
+  ${({ theme, status }) => {
+    console.log(theme)
+
+    return css`
+    background-color: ${theme[`button-outline-${status}-background`]};
+  `}}
+`
 
 const ghost = css<ButtonProps>``
 

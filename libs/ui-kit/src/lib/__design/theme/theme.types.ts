@@ -35,6 +35,13 @@ export interface ThemeObject {
   'button-filled-warning-background': Colors;
   'button-filled-danger-background': Colors;
 
+  'button-outline-basic-background': string;
+  'button-outline-primary-background': string;
+  'button-outline-success-background': string;
+  'button-outline-info-background': string;
+  'button-outline-warning-background': string;
+  'button-outline-danger-background': string;
+
   /**
    * Button Hover
    */

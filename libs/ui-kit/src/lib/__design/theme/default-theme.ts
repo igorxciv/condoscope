@@ -1,3 +1,4 @@
+import { transparentize } from 'polished'
 import { ThemeObject } from './theme.types'
 import { Colors } from '../settings'
 
@@ -29,6 +30,13 @@ export const defaultTheme: ThemeObject = {
   'button-filled-info-background': Colors.Info500,
   'button-filled-warning-background': Colors.Warning500,
   'button-filled-danger-background': Colors.Danger500,
+
+  'button-outline-basic-background': transparentize(0.92, Colors.Basic600),
+  'button-outline-primary-background': transparentize(0.92, Colors.Primary500),
+  'button-outline-success-background': transparentize(0.92, Colors.Success500),
+  'button-outline-info-background': transparentize(0.92, Colors.Info500),
+  'button-outline-warning-background': transparentize(0.92, Colors.Warning500),
+  'button-outline-danger-background': transparentize(0.92, Colors.Danger500),
 
   'button-filled-basic-hover-background': Colors.Basic200,
   'button-filled-primary-hover-background': Colors.Primary400,
