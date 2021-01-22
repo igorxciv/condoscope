@@ -29,6 +29,7 @@ const filled = css<ButtonProps>`
 
       &:focus {
         --border-color: ${theme[`button-filled-${status}-focus-border`]};
+        box-shadow: ${theme['button-filled-focus-shadow']};
       }
   `}
 }`
@@ -48,6 +49,7 @@ const outline = css<ButtonProps>`
     &:focus,
     &:active {
       --background-color: ${theme[`button-outline-${status}-focus-background`]};
+      box-shadow: ${theme['button-outline-focus-shadow']};
     }
   `}
 `
@@ -65,6 +67,7 @@ const ghost = css<ButtonProps>`
     &:focus,
     &:active {
       background-color: ${theme['button-ghost-focus-background']};
+      box-shadow: ${theme['button-ghost-focus-shadow']};
     }
   `}
 `

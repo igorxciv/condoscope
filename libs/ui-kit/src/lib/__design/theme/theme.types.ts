@@ -91,6 +91,11 @@ export interface ThemeObject {
   'button-filled-colorized-color': Colors;
 
   /**
+   * Focus Shadow
+   */
+  'button-filled-focus-shadow': string;
+
+  /**
    * Button Outline
    */
 
@@ -145,6 +150,11 @@ export interface ThemeObject {
   'button-outline-danger-color': Colors;
 
   /**
+   * Focus Shadow
+   */
+  'button-outline-focus-shadow': string;
+
+  /**
    * Button Ghost
    */
 
@@ -172,4 +182,9 @@ export interface ThemeObject {
    * Focus
    */
   'button-ghost-focus-background': string;
+
+  /**
+   * Focus Shadow
+   */
+  'button-ghost-focus-shadow': string;
 }
