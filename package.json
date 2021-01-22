@@ -23,7 +23,8 @@
     "update": "nx migrate latest",
     "workspace-generator": "nx workspace-generator",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "build-storybook": "nx run ui-kit:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -94,6 +95,7 @@
     "husky": "4.3.7",
     "jest": "26.2.2",
     "lint-staged": ">=10",
+    "nx": "11.1.5",
     "polished": "4.0.5",
     "prettier": "2.1.2",
     "react-test-renderer": "17.0.1",
