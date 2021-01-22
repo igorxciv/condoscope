@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: UI Kit Storybook
 on: 
   push:
     paths: ["libs/ui-kit/**"] # Trigger the action only when files change in the folders defined here
