@@ -109,7 +109,9 @@
         "react/jsx-one-expression-per-line": "error",
 
         "import/no-default-export": "error",
-        "import/no-internal-modules": "error",
+        "import/no-internal-modules": ["error", {
+          "allow": ["react-test-renderer/*"]
+        }],
         "import/order": ["error", {
           "groups": ["builtin", "external", "internal", "sibling"],
           "newlines-between": "never"

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Filled renders successfully 1`] = `
+.c0 {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-property: background-color border-color;
+  transition-property: background-color border-color;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  background-color: var(--background-color);
+  border: 0.0625rem solid var(--border-color);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+  size="medium"
+>
+  Button
+</button>
+`;
+
+exports[`Button Ghost renders successfully 1`] = `
+.c0 {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-property: background-color border-color;
+  transition-property: background-color border-color;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  border: 0.0625rem solid;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+  size="medium"
+>
+  Button
+</button>
+`;
+
+exports[`Button Outline renders successfully 1`] = `
+.c0 {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-property: background-color border-color;
+  transition-property: background-color border-color;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  border: 0.0625rem solid;
+  background-color: var(--background-color);
+}
+
+.c0:focus {
+  outline: none;
+}
+
+<button
+  className="c0"
+  size="medium"
+>
+  Button
+</button>
+`;

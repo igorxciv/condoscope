@@ -38,7 +38,7 @@ const outline = css<ButtonProps>`
   ${({ theme, status }) => css`
     --background-color: ${theme[`button-outline-${status}-background`]};
 
-    border: 1px solid ${theme[`button-outline-${status}-border`]};
+    border: ${rem(1)} solid ${theme[`button-outline-${status}-border`]};
     color: ${theme[`button-outline-${status}-color`]};
     background-color: var(--background-color);
 
