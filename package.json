@@ -95,7 +95,6 @@
     "husky": "4.3.7",
     "jest": "26.2.2",
     "lint-staged": ">=10",
-    "nx": "11.1.5",
     "polished": "4.0.5",
     "prettier": "2.1.2",
     "react-test-renderer": "17.0.1",
