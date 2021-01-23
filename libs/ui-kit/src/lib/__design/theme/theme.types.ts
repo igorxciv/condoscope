@@ -187,4 +187,13 @@ export interface ThemeObject {
    * Focus Shadow
    */
   'button-ghost-focus-shadow': string;
+
+  /**
+   * Input
+   */
+
+  /**
+   * General
+   */
+  'input-label-color': Colors;
 }

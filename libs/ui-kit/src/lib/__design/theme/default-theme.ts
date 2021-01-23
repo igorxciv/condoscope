@@ -3,7 +3,7 @@ import { ThemeObject } from './theme.types'
 import { Colors } from '../settings'
 
 export const defaultTheme: ThemeObject = {
-  'font-family-primary': 'unquote(\'Open Sans, sans-serif\')',
+  'font-family-primary': 'Open Sans, sans-serif',
   'font-weight-bold': 700,
 
   'button-giant-line-height': rem(24),
@@ -109,4 +109,6 @@ export const defaultTheme: ThemeObject = {
   'button-ghost-focus-shadow': `0 0 0 ${rem(6)} ${transparentize(0.84, Colors.Basic600)}, inset 0 0 0 100vmax ${transparentize(0.84, Colors.Basic600)}`,
 
   'button-radius': rem(4),
+
+  'input-label-color': Colors.Basic600,
 }
