@@ -2,7 +2,8 @@ import React, { FC, PropsWithChildren } from 'react'
 import { InputGroupStyled, InputStyled, InputLabelStyled } from './input.styled'
 import { InputProps } from './input.types'
 
-export const Input: FC<InputProps> = ({ type = 'text', children }: PropsWithChildren<InputProps>) => {
+export const Input: FC<InputProps> = (props: PropsWithChildren<InputProps>) => {
+  const { children, kind } = props
   const label = children ? (
     <InputLabelStyled>
       {children}
@@ -16,7 +17,12 @@ export const Input: FC<InputProps> = ({ type = 'text', children }: PropsWithChil
   return (
     <InputGroupStyled>
       {label}
-      <InputStyled type={type} />
+      <InputStyled type={kind} />
     </InputGroupStyled>
   )
+}
+
+Input.defaultProps = {
+  size: 'medium',
+  kind: 'text',
 }

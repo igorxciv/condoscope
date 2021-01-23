@@ -1,4 +1,4 @@
 export type InputProps = {
-  type?: 'text' | 'number' | 'email'
-  size: 'small' | 'medium' | 'large'
+  kind?: 'text' | 'number' | 'email'
+  size?: 'small' | 'medium' | 'large'
 }

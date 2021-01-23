@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components'
 import { rem } from 'polished'
-import { InputProps } from './input.types'
 import { visuallyHidden } from '../__design/utils'
 
-export const InputGroupStyled = styled.label<InputProps>`
+export const InputGroupStyled = styled.label`
   display: flex;
   flex-direction: column;
   row-gap: ${rem(8)};
@@ -13,9 +12,9 @@ export const InputGroupStyled = styled.label<InputProps>`
   `}
 `
 
-export const InputStyled = styled.input<InputProps>``
+export const InputStyled = styled.input``
 
-export const InputLabelStyled = styled.span<InputProps>`
+export const InputLabelStyled = styled.span`
   text-transform: uppercase;
 
   &[aria-hidden="true"] {

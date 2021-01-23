@@ -7,7 +7,7 @@ export default {
   title: 'Input',
 }
 
-export const withLabel: FC = () => {
+export const regular: FC = () => {
   return (
     <Input>
       {text('Label', 'Label')}
