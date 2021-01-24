@@ -1,8 +1,17 @@
 import styled, { css } from 'styled-components'
 import { rem } from 'polished'
+import { InputProps } from './input.types'
 import { visuallyHidden } from '../__design/utils'
 
-export const InputGroupStyled = styled.label`
+const inputBasic = css<InputProps>`
+  ${({ theme }) => css`
+    border: ${rem(1)} solid ${theme['input-basic-border-color']};
+  `}
+`
+
+const inputAppearances = { basic: inputBasic }
+
+export const InputGroupStyled = styled.label<InputProps>`
   display: flex;
   flex-direction: column;
   row-gap: ${rem(8)};
@@ -12,9 +21,29 @@ export const InputGroupStyled = styled.label`
   `}
 `
 
-export const InputStyled = styled.input``
+export const InputStyled = styled.input<InputProps>`
+  ${({ theme, appearance }) => css`
+    background-color: ${theme['input-background']};
+    border-radius: ${theme['input-radius']};
 
-export const InputLabelStyled = styled.span`
+    padding: ${theme['input-medium-padding']};
+    line-height: ${theme['input-medium-line-height']};
+
+    font-size: ${theme['input-medium-font-size']};
+    font-weight: ${theme['font-weight-bold']};
+    color: ${theme['input-basic-color']};
+
+    &::placeholder {
+      font-weight: ${theme['font-weight-light']};
+      color: ${theme['input-placeholder-color']};
+      font-family: ${theme['font-family-primary']};
+    }
+
+    ${inputAppearances[appearance]}
+  `}
+`
+
+export const InputLabelStyled = styled.span<InputProps>`
   text-transform: uppercase;
 
   &[aria-hidden="true"] {
@@ -23,5 +52,6 @@ export const InputLabelStyled = styled.span`
 
   ${({ theme }) => css`
     color: ${theme['input-label-color']};
+    font-weight: ${theme['font-weight-bold']};
   `}
 `

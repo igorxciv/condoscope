@@ -9,7 +9,7 @@ export default {
 
 export const regular: FC = () => {
   return (
-    <Input>
+    <Input placeholder={text('Placeholder', 'Placeholder')}>
       {text('Label', 'Label')}
     </Input>
   )

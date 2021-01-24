@@ -6,6 +6,7 @@ export interface ThemeObject {
    */
   'font-family-primary': string;
   'font-weight-bold': number;
+  'font-weight-light': number;
 
   /**
    * Buttons
@@ -196,4 +197,27 @@ export interface ThemeObject {
    * General
    */
   'input-label-color': Colors;
+  'input-background': Colors;
+  'input-placeholder-color': Colors;
+
+  /**
+   * Shape
+   */
+  'input-radius': string;
+
+  /**
+   * Basic
+   */
+  'input-basic-border-color': Colors;
+  'input-basic-color': Colors;
+
+  /**
+   * Sizes
+   */
+  /**
+   * Medium
+   */
+  'input-medium-line-height': string;
+  'input-medium-padding': string;
+  'input-medium-font-size': string;
 }

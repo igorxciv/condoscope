@@ -5,6 +5,7 @@ import { Colors } from '../settings'
 export const defaultTheme: ThemeObject = {
   'font-family-primary': 'Open Sans, sans-serif',
   'font-weight-bold': 700,
+  'font-weight-light': 300,
 
   'button-giant-line-height': rem(24),
   'button-large-line-height': rem(24),
@@ -109,6 +110,16 @@ export const defaultTheme: ThemeObject = {
   'button-ghost-focus-shadow': `0 0 0 ${rem(6)} ${transparentize(0.84, Colors.Basic600)}, inset 0 0 0 100vmax ${transparentize(0.84, Colors.Basic600)}`,
 
   'button-radius': rem(4),
+  'input-radius': rem(4),
 
   'input-label-color': Colors.Basic600,
+  'input-background': Colors.Basic200,
+  'input-placeholder-color': Colors.Basic600,
+
+  'input-basic-border-color': Colors.Basic400,
+  'input-basic-color': Colors.Basic800,
+
+  'input-medium-padding': `${rem(7)} ${rem(16)}`,
+  'input-medium-line-height': rem(24),
+  'input-medium-font-size': rem(15),
 }
