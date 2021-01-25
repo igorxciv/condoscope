@@ -41,13 +41,18 @@ export const InputStyled = styled.input<InputProps>`
       font-family: ${theme['font-family-primary']};
     }
 
+    &:disabled,
+    &:disabled::placeholder {
+      color: ${theme['input-disabled-color']};
+    }
+
     &:focus {
       border-color: ${theme['input-focus-border-color']};
       background-color: ${theme['input-focus-background']};
       outline: none;
     }
 
-    &:hover {
+    &:not(:disabled):hover {
       border-color: ${theme['input-hover-border-color']};
       background-color: ${theme['input-hover-background']};
     }

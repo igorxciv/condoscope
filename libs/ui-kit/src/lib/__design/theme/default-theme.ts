@@ -130,4 +130,6 @@ export const defaultTheme: ThemeObject = {
 
   'input-focus-border-color': Colors.Primary500,
   'input-focus-background': Colors.Basic100,
+
+  'input-disabled-color': transparentize(0.52, Colors.Basic600),
 }

@@ -234,4 +234,9 @@ export interface ThemeObject {
    */
   'input-focus-border-color': Colors;
   'input-focus-background': Colors;
+
+  /**
+   * Disabled
+   */
+  'input-disabled-color': string;
 }

@@ -3,4 +3,5 @@ export type InputProps = {
   // size?: 'small' | 'medium' | 'large'
   appearance?: 'basic' | 'success' | 'info' | 'warning' | 'error'
   placeholder?: string
+  disabled?: boolean
 }

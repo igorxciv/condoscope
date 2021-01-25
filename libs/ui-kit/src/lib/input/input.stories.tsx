@@ -22,3 +22,11 @@ export const password: FC = () => {
     </Input>
   )
 }
+
+export const disabled: FC = () => {
+  return (
+    <Input placeholder={text('Placeholder', 'Disabled')} disabled>
+      {text('Label', 'Disabled')}
+    </Input>
+  )
+}
