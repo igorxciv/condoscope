@@ -5,6 +5,7 @@ import { Colors } from '../settings'
 export const defaultTheme: ThemeObject = {
   'font-family-primary': 'Open Sans, sans-serif',
   'font-weight-bold': 700,
+  'font-weight-regular': 400,
   'font-weight-light': 300,
 
   'button-giant-line-height': rem(24),
@@ -122,4 +123,10 @@ export const defaultTheme: ThemeObject = {
   'input-medium-padding': `${rem(7)} ${rem(16)}`,
   'input-medium-line-height': rem(24),
   'input-medium-font-size': rem(15),
+
+  'input-hover-background': Colors.Basic300,
+  'input-hover-border-color': Colors.Basic400,
+
+  'input-focus-border-color': Colors.Primary500,
+  'input-focus-background': Colors.Basic100,
 }

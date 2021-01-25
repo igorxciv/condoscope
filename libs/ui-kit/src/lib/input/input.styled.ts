@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import { rem } from 'polished'
 import { InputProps } from './input.types'
-import { visuallyHidden } from '../__design/utils'
+import { propertyAnimation, visuallyHidden } from '../__design/utils'
 
 const inputBasic = css<InputProps>`
   ${({ theme }) => css`
@@ -33,10 +33,23 @@ export const InputStyled = styled.input<InputProps>`
     font-weight: ${theme['font-weight-bold']};
     color: ${theme['input-basic-color']};
 
+    ${propertyAnimation(['background-color', 'border-color'])}
+
     &::placeholder {
-      font-weight: ${theme['font-weight-light']};
+      font-weight: ${theme['font-weight-regular']};
       color: ${theme['input-placeholder-color']};
       font-family: ${theme['font-family-primary']};
+    }
+
+    &:focus {
+      border-color: ${theme['input-focus-border-color']};
+      background-color: ${theme['input-focus-background']};
+      outline: none;
+    }
+
+    &:hover {
+      border-color: ${theme['input-hover-border-color']};
+      background-color: ${theme['input-hover-background']};
     }
 
     ${inputAppearances[appearance]}

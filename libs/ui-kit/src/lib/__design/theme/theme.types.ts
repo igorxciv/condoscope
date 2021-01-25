@@ -6,6 +6,7 @@ export interface ThemeObject {
    */
   'font-family-primary': string;
   'font-weight-bold': number;
+  'font-weight-regular': number;
   'font-weight-light': number;
 
   /**
@@ -220,4 +221,16 @@ export interface ThemeObject {
   'input-medium-line-height': string;
   'input-medium-padding': string;
   'input-medium-font-size': string;
+
+  /**
+   * Hover
+   */
+  'input-hover-border-color': Colors;
+  'input-hover-background': Colors;
+
+  /**
+   * Focus
+   */
+  'input-focus-border-color': Colors;
+  'input-focus-background': Colors;
 }
