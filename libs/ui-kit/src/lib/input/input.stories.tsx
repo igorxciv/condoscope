@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { text } from '@storybook/addon-knobs'
+import { text, boolean } from '@storybook/addon-knobs'
 import { Input } from './input'
 
 export default {
@@ -9,7 +9,7 @@ export default {
 
 export const regular: FC = () => {
   return (
-    <Input placeholder={text('Placeholder', 'Placeholder')}>
+    <Input placeholder={text('Placeholder', 'Placeholder')} disabled={boolean('Disabled', false)}>
       {text('Label', 'Label')}
     </Input>
   )
@@ -19,14 +19,6 @@ export const password: FC = () => {
   return (
     <Input placeholder={text('Placeholder', 'Password')} kind="password">
       {text('Label', 'Password')}
-    </Input>
-  )
-}
-
-export const disabled: FC = () => {
-  return (
-    <Input placeholder={text('Placeholder', 'Disabled')} disabled>
-      {text('Label', 'Disabled')}
     </Input>
   )
 }
