@@ -80,6 +80,7 @@ const ButtonStyle = css<ButtonProps>`
     border: none;
     cursor: pointer;
     text-transform: uppercase;
+    width: 100%;
 
     font-family: ${theme['font-family-primary']};
     font-weight: ${theme['font-weight-bold']};
