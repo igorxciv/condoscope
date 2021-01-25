@@ -6,6 +6,7 @@ export interface ThemeObject {
    */
   'font-family-primary': string;
   'font-weight-bold': number;
+  'font-weight-semi-bold': number;
   'font-weight-regular': number;
   'font-weight-light': number;
 

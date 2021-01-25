@@ -14,3 +14,11 @@ export const regular: FC = () => {
     </Input>
   )
 }
+
+export const password: FC = () => {
+  return (
+    <Input placeholder={text('Placeholder', 'Password')} kind="password">
+      {text('Label', 'Password')}
+    </Input>
+  )
+}

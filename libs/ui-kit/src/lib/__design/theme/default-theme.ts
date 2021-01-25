@@ -5,6 +5,7 @@ import { Colors } from '../settings'
 export const defaultTheme: ThemeObject = {
   'font-family-primary': 'Open Sans, sans-serif',
   'font-weight-bold': 700,
+  'font-weight-semi-bold': 600,
   'font-weight-regular': 400,
   'font-weight-light': 300,
 

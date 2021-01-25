@@ -30,7 +30,7 @@ export const InputStyled = styled.input<InputProps>`
     line-height: ${theme['input-medium-line-height']};
 
     font-size: ${theme['input-medium-font-size']};
-    font-weight: ${theme['font-weight-bold']};
+    font-weight: ${theme['font-weight-semi-bold']};
     color: ${theme['input-basic-color']};
 
     ${propertyAnimation(['background-color', 'border-color'])}
