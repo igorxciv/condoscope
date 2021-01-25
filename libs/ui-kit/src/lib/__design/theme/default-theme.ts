@@ -120,8 +120,26 @@ export const defaultTheme: ThemeObject = {
   'input-line-height': rem(24),
   'input-font-size': rem(15),
 
-  'input-basic-border-color': Colors.Basic400,
   'input-basic-color': Colors.Basic800,
+
+  'input-basic-border-color': Colors.Basic400,
+  'input-info-border-color': Colors.Info500,
+  'input-success-border-color': Colors.Success500,
+  'input-warning-border-color': Colors.Warning500,
+  'input-danger-border-color': Colors.Danger500,
+  'input-primary-border-color': Colors.Primary500,
+
+  'input-info-hover-border-color': Colors.Info400,
+  'input-success-hover-border-color': Colors.Success400,
+  'input-warning-hover-border-color': Colors.Warning400,
+  'input-danger-hover-border-color': Colors.Danger400,
+  'input-primary-hover-border-color': Colors.Primary400,
+
+  'input-info-focus-border-color': Colors.Info700,
+  'input-success-focus-border-color': Colors.Success700,
+  'input-warning-focus-border-color': Colors.Warning700,
+  'input-danger-focus-border-color': Colors.Danger700,
+  'input-primary-focus-border-color': Colors.Primary700,
 
   'input-small-padding': `${rem(3)} ${rem(16)}`,
   'input-medium-padding': `${rem(7)} ${rem(16)}`,

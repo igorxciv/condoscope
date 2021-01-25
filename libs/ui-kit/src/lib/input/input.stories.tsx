@@ -17,6 +17,14 @@ export const regular: FC = () => {
         Medium: 'medium',
         Large: 'large',
       }, 'medium')}
+      appearance={select('Appearance', {
+        Basic: 'basic',
+        Primary: 'primary',
+        Info: 'info',
+        Success: 'success',
+        Warning: 'warning',
+        Danger: 'danger',
+      }, 'basic')}
     >
       {text('Label', 'Label')}
     </Input>

@@ -216,6 +216,41 @@ export interface ThemeObject {
   'input-font-size': string;
 
   /**
+   * Info
+   */
+  'input-info-border-color': Colors;
+  'input-info-hover-border-color': Colors;
+  'input-info-focus-border-color': Colors;
+
+  /**
+   * Success
+   */
+  'input-success-border-color': Colors;
+  'input-success-hover-border-color': Colors;
+  'input-success-focus-border-color': Colors;
+
+  /**
+   * Warning
+   */
+  'input-warning-border-color': Colors;
+  'input-warning-hover-border-color': Colors;
+  'input-warning-focus-border-color': Colors;
+
+  /**
+   * Danger
+   */
+  'input-danger-border-color': Colors;
+  'input-danger-hover-border-color': Colors;
+  'input-danger-focus-border-color': Colors;
+
+  /**
+   * Primary
+   */
+  'input-primary-border-color': Colors;
+  'input-primary-hover-border-color': Colors;
+  'input-primary-focus-border-color': Colors;
+
+  /**
    * Sizes
    */
   /**
