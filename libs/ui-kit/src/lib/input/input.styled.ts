@@ -101,8 +101,6 @@ export const InputGroupStyled = styled.label<InputProps>`
 
 export const InputStyled = styled.input<InputProps>`
   ${({ theme, appearance, mass }) => css`
-    --text-color: ${theme['input-basic-color']};
-    --font-weight: ${theme['font-weight-semi-bold']};
     --background-color: ${theme['input-background']};
 
     border-radius: ${theme['input-radius']};
@@ -111,7 +109,8 @@ export const InputStyled = styled.input<InputProps>`
     line-height: ${theme['input-line-height']};
 
     font-size: ${theme['input-font-size']};
-    color: var(--text-color);
+    font-weight: ${theme['font-weight-semi-bold']};
+    color: ${theme['input-basic-color']};
     background-color: var(--background-color);
 
     padding: ${theme[`input-${mass}-padding`]};
@@ -119,14 +118,14 @@ export const InputStyled = styled.input<InputProps>`
     ${propertyAnimation(['background-color', 'border-color'])}
 
     &::placeholder {
-      --text-color: ${theme['input-placeholder-color']};
-      --font-weight: ${theme['font-weight-regular']};
+      color: ${theme['input-placeholder-color']};
+      font-weight: ${theme['font-weight-regular']};
       font-family: ${theme['font-family-primary']};
     }
 
     &:disabled,
     &:disabled::placeholder {
-      --text-color: ${theme['input-disabled-color']};
+      color: ${theme['input-disabled-color']};
     }
 
     &:focus {

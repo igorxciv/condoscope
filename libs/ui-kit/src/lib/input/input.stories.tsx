@@ -38,3 +38,19 @@ export const password: FC = () => {
     </Input>
   )
 }
+
+export const number: FC = () => {
+  return (
+    <Input placeholder={text('Placeholder', '12345')} kind="number">
+      {text('Label', 'Number')}
+    </Input>
+  )
+}
+
+export const email: FC = () => {
+  return (
+    <Input placeholder={text('Placeholder', 'email@me.com')} kind="email">
+      {text('Label', 'E-mail')}
+    </Input>
+  )
+}
