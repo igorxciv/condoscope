@@ -212,16 +212,26 @@ export interface ThemeObject {
    */
   'input-basic-border-color': Colors;
   'input-basic-color': Colors;
+  'input-line-height': string;
+  'input-font-size': string;
 
   /**
    * Sizes
    */
   /**
+   * Small
+   */
+  'input-small-padding': string
+
+  /**
    * Medium
    */
-  'input-medium-line-height': string;
   'input-medium-padding': string;
-  'input-medium-font-size': string;
+
+  /**
+   * Large
+   */
+  'input-large-padding': string;
 
   /**
    * Hover

@@ -11,6 +11,26 @@ const inputBasic = css<InputProps>`
 
 const inputAppearances = { basic: inputBasic }
 
+const inputSmall = css`
+  ${({ theme }) => css`
+    padding: ${theme['input-small-padding']};
+  `}
+`
+
+const inputMedium = css<InputProps>`
+  ${({ theme }) => css`
+    padding: ${theme['input-medium-padding']};
+  `}
+`
+
+const inputLarge = css`
+  ${({ theme }) => css`
+    padding: ${theme['input-large-padding']};
+  `}
+`
+
+const inputSizes = { small: inputSmall, medium: inputMedium, large: inputLarge }
+
 export const InputGroupStyled = styled.label<InputProps>`
   display: flex;
   flex-direction: column;
@@ -22,14 +42,12 @@ export const InputGroupStyled = styled.label<InputProps>`
 `
 
 export const InputStyled = styled.input<InputProps>`
-  ${({ theme, appearance }) => css`
+  ${({ theme, appearance, mass }) => css`
     background-color: ${theme['input-background']};
     border-radius: ${theme['input-radius']};
+    line-height: ${theme['input-line-height']};
 
-    padding: ${theme['input-medium-padding']};
-    line-height: ${theme['input-medium-line-height']};
-
-    font-size: ${theme['input-medium-font-size']};
+    font-size: ${theme['input-font-size']};
     font-weight: ${theme['font-weight-semi-bold']};
     color: ${theme['input-basic-color']};
 
@@ -58,6 +76,8 @@ export const InputStyled = styled.input<InputProps>`
     }
 
     ${inputAppearances[appearance]}
+
+    ${inputSizes[mass]}
   `}
 `
 

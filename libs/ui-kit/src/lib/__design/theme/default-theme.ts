@@ -117,13 +117,15 @@ export const defaultTheme: ThemeObject = {
   'input-label-color': Colors.Basic600,
   'input-background': Colors.Basic200,
   'input-placeholder-color': Colors.Basic600,
+  'input-line-height': rem(24),
+  'input-font-size': rem(15),
 
   'input-basic-border-color': Colors.Basic400,
   'input-basic-color': Colors.Basic800,
 
+  'input-small-padding': `${rem(3)} ${rem(16)}`,
   'input-medium-padding': `${rem(7)} ${rem(16)}`,
-  'input-medium-line-height': rem(24),
-  'input-medium-font-size': rem(15),
+  'input-large-padding': `${rem(11)} ${rem(16)}`,
 
   'input-hover-background': Colors.Basic300,
   'input-hover-border-color': Colors.Basic400,

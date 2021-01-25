@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { text, boolean } from '@storybook/addon-knobs'
+import { text, boolean, select } from '@storybook/addon-knobs'
 import { Input } from './input'
 
 export default {
@@ -9,7 +9,15 @@ export default {
 
 export const regular: FC = () => {
   return (
-    <Input placeholder={text('Placeholder', 'Placeholder')} disabled={boolean('Disabled', false)}>
+    <Input
+      placeholder={text('Placeholder', 'Placeholder')}
+      disabled={boolean('Disabled', false)}
+      mass={select('Size', {
+        Small: 'small',
+        Medium: 'medium',
+        Large: 'large',
+      }, 'medium')}
+    >
       {text('Label', 'Label')}
     </Input>
   )
