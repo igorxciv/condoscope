@@ -19,10 +19,7 @@ export const Input: FC<InputProps> = (props: PropsWithChildren<InputProps>) => {
   return (
     <InputGroupStyled>
       {label}
-      <InputStyled
-        type={kind}
-        {...restProps}
-      />
+      <InputStyled type={kind} {...restProps} />
       {starIcon}
     </InputGroupStyled>
   )

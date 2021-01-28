@@ -57,7 +57,18 @@ export const email: FC = () => {
 
 export const withStar: FC = () => {
   return (
-    <Input placeholder={text('Placeholder', 'email@me.com')} withStar>
+    <Input
+      placeholder={text('Placeholder', 'email@me.com')}
+      appearance={select('Appearance', {
+        Basic: 'basic',
+        Primary: 'primary',
+        Info: 'info',
+        Success: 'success',
+        Warning: 'warning',
+        Danger: 'danger',
+      }, 'basic')}
+      withStar
+    >
       {text('Label', 'E-mail')}
     </Input>
   )

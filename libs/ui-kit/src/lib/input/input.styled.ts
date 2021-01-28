@@ -90,7 +90,7 @@ const danger = css`
 
 const inputAppearances = { basic, info, primary, success, warning, danger }
 
-export const InputGroupStyled = styled.label<InputProps>`
+export const InputGroupStyled = styled.div<InputProps>`
   display: flex;
   flex-direction: column;
   row-gap: ${rem(8)};
