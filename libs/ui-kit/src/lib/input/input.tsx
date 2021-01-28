@@ -27,7 +27,7 @@ export const Input: FC<InputProps> = (props: PropsWithChildren<InputProps>) => {
       </InputHelpTextStyled>
 
       <InputFieldGroupStyled mass={mass} appearance={appearance} disabled={disabled}>
-        <InputFieldStyled type={kind} appearance={appearance} mass={mass} inputIcon={inputIcon} />
+        <InputFieldStyled type={kind} appearance={appearance} mass={mass} inputIcon={inputIcon} disabled={disabled} />
         {inputIcon}
       </InputFieldGroupStyled>
 
