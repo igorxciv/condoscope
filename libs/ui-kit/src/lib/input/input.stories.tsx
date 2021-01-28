@@ -90,12 +90,19 @@ export const withCaption: FC = () => {
       inputIcon={<StarIcon />}
       caption={
         <span>
-          <StarIcon width={16} height={16} />
           Caption text, description, error notification
         </span>
       }
     >
       {text('Label', 'E-mail')}
+    </Input>
+  )
+}
+
+export const disabled: FC = () => {
+  return (
+    <Input placeholder={text('Placeholder', 'Disabled')} disabled>
+      {text('Label', 'Disabled')}
     </Input>
   )
 }

@@ -10,6 +10,8 @@ export const defaultTheme: ThemeObject = {
   'font-weight-light': 300,
 
   'font-size-caption': rem(12),
+  'font-size-label': rem(12),
+  'font-size-p1': rem(15),
 
   'button-giant-line-height': rem(24),
   'button-large-line-height': rem(24),
@@ -120,7 +122,6 @@ export const defaultTheme: ThemeObject = {
   'input-background': Colors.Basic200,
   'input-placeholder-color': Colors.Basic600,
   'input-line-height': rem(24),
-  'input-font-size': rem(15),
 
   'input-basic-color': Colors.Basic800,
 

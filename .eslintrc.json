@@ -89,6 +89,11 @@
           "args": "all",
           "argsIgnorePattern": "^_"
         }],
+        "@typescript-eslint/member-delimiter-style": ["error", {
+          "multiline": {
+            "delimiter": "none"
+          }
+        }],
 
         "react/jsx-tag-spacing": ["error", {
           "beforeClosing": "allow",

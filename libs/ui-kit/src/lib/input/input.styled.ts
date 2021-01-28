@@ -108,6 +108,7 @@ export const InputLabelStyled = styled.label`
 
   ${({ theme }) => css`
     color: ${theme['input-label-color']};
+    font-size: ${theme['font-size-label']};
     font-weight: ${theme['font-weight-bold']};
   `}
 `
@@ -146,7 +147,7 @@ export const InputFieldStyled = styled.input<InputProps>`
 
     line-height: ${theme['input-line-height']};
 
-    font-size: ${theme['input-font-size']};
+    font-size: ${theme['font-size-p1']};
     font-weight: ${theme['font-weight-semi-bold']};
     color: ${theme['input-basic-color']};
     background-color: var(--background-color);
