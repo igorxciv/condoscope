@@ -101,7 +101,7 @@ export const withCaption: FC = () => {
 
 export const disabled: FC = () => {
   return (
-    <Input placeholder={text('Placeholder', 'Disabled')} disabled>
+    <Input placeholder={text('Placeholder', 'Disabled')} disabled inputIcon={<StarIcon />}>
       {text('Label', 'Disabled')}
     </Input>
   )

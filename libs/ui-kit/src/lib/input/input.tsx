@@ -3,32 +3,31 @@ import { InputGroupStyled, InputLabelStyled, InputHelpTextStyled, InputFieldGrou
 import { InputProps } from './input.types'
 
 export const Input: FC<InputProps> = (props: PropsWithChildren<InputProps>) => {
-  const { children, ...restProps } = props
-  const { inputIcon, kind, caption: captionText } = restProps
+  const { children, inputIcon, kind, caption: captionText, appearance, mass, disabled } = props
   const label = children ? (
-    <InputLabelStyled {...restProps}>
+    <InputLabelStyled>
       {children}
     </InputLabelStyled>
   ) : (
-    <InputLabelStyled aria-hidden="true" {...restProps}>
+    <InputLabelStyled aria-hidden="true">
       Empty Label
     </InputLabelStyled>
   )
   const caption = captionText ? (
-    <InputCaptionStyled {...restProps}>
+    <InputCaptionStyled appearance={appearance}>
       {captionText}
     </InputCaptionStyled>
   ) : null
 
   return (
-    <InputGroupStyled {...restProps}>
+    <InputGroupStyled>
       {label}
-      <InputHelpTextStyled {...restProps}>
+      <InputHelpTextStyled>
         Help
       </InputHelpTextStyled>
 
-      <InputFieldGroupStyled {...restProps}>
-        <InputFieldStyled type={kind} {...restProps} />
+      <InputFieldGroupStyled mass={mass} appearance={appearance} disabled={disabled}>
+        <InputFieldStyled type={kind} appearance={appearance} mass={mass} inputIcon={inputIcon} />
         {inputIcon}
       </InputFieldGroupStyled>
 

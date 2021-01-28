@@ -3,7 +3,7 @@ import { math, rem } from 'polished'
 import { InputProps } from './input.types'
 import { propertyAnimation, visuallyHidden } from '../__design/utils'
 
-const basic = css<InputProps>`
+const basic = css`
   ${({ theme }) => css`
     --border-color: ${theme['input-basic-border-color']};
 
@@ -89,7 +89,7 @@ const danger = css`
 
 const inputAppearances = { basic, info, primary, success, warning, danger }
 
-export const InputGroupStyled = styled.div<InputProps>`
+export const InputGroupStyled = styled.div`
   display: grid;
   row-gap: ${rem(8)};
   grid-template-columns: auto auto;
@@ -122,11 +122,11 @@ export const InputHelpTextStyled = styled.span`
   `}
 `
 
-export const InputFieldGroupStyled = styled.div<InputProps>`
+export const InputFieldGroupStyled = styled.div<Pick<InputProps, 'mass' | 'appearance' | 'disabled'>>`
   position: relative;
   grid-column: 1 / 3;
 
-  ${({ theme, mass, appearance }) => css`
+  ${({ theme, mass, appearance, disabled }) => css`
     svg {
       width: ${theme['input-icon-size']};
       height: ${theme['input-icon-size']};
@@ -134,11 +134,15 @@ export const InputFieldGroupStyled = styled.div<InputProps>`
       right: ${theme['input-horizontal-padding']};
       bottom: ${theme[`input-${mass}-vertical-padding`]};
       color: ${theme[`input-icon-${appearance}-color`]};
+
+      ${disabled && css`
+        color: ${theme['input-disabled-color']};
+      `}
     }
   `}
 `
 
-export const InputFieldStyled = styled.input<InputProps>`
+export const InputFieldStyled = styled.input<Pick<InputProps, 'appearance' | 'mass' | 'inputIcon'>>`
   ${({ theme, appearance, mass, inputIcon }) => css`
     --background-color: ${theme['input-background']};
 
@@ -186,7 +190,7 @@ export const InputFieldStyled = styled.input<InputProps>`
   `}
 `
 
-export const InputCaptionStyled = styled.span<InputProps>`
+export const InputCaptionStyled = styled.span<Pick<InputProps, 'appearance'>>`
   grid-column: 1 / 3;
 
   ${({ theme, appearance }) => css`
