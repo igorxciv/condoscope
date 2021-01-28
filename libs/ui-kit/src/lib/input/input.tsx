@@ -42,4 +42,6 @@ Input.defaultProps = {
   placeholder: '',
   disabled: false,
   mass: 'medium',
+  inputIcon: null,
+  caption: null,
 }
