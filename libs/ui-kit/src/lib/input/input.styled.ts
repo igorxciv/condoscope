@@ -92,7 +92,7 @@ const inputAppearances = { basic, info, primary, success, warning, danger }
 export const InputGroupStyled = styled.div<InputProps>`
   display: grid;
   row-gap: ${rem(8)};
-  grid-template-columns: min-content min-content;
+  grid-template-columns: auto auto;
 
   ${({ theme }) => css`
     font-family: ${theme['font-family-primary']};
@@ -144,6 +144,8 @@ export const InputFieldStyled = styled.input<InputProps>`
 
     border-radius: ${theme['input-radius']};
     border: ${rem(1)} solid var(--border-color);
+    width: 100%;
+    box-sizing: border-box;
 
     line-height: ${theme['input-line-height']};
 

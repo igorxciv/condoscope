@@ -4,7 +4,7 @@ import { InputProps } from './input.types'
 
 export const Input: FC<InputProps> = (props: PropsWithChildren<InputProps>) => {
   const { children, ...restProps } = props
-  const { inputIcon, kind, caption } = restProps
+  const { inputIcon, kind, caption: captionText } = restProps
   const label = children ? (
     <InputLabelStyled {...restProps}>
       {children}
@@ -14,6 +14,11 @@ export const Input: FC<InputProps> = (props: PropsWithChildren<InputProps>) => {
       Empty Label
     </InputLabelStyled>
   )
+  const caption = captionText ? (
+    <InputCaptionStyled {...restProps}>
+      {captionText}
+    </InputCaptionStyled>
+  ) : null
 
   return (
     <InputGroupStyled {...restProps}>
@@ -27,9 +32,7 @@ export const Input: FC<InputProps> = (props: PropsWithChildren<InputProps>) => {
         {inputIcon}
       </InputFieldGroupStyled>
 
-      <InputCaptionStyled {...restProps}>
-        {caption}
-      </InputCaptionStyled>
+      {caption}
     </InputGroupStyled>
   )
 }
