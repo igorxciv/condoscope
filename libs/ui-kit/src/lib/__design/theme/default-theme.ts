@@ -9,6 +9,8 @@ export const defaultTheme: ThemeObject = {
   'font-weight-regular': 400,
   'font-weight-light': 300,
 
+  'font-size-caption': rem(12),
+
   'button-giant-line-height': rem(24),
   'button-large-line-height': rem(24),
   'button-medium-line-height': rem(20),
@@ -160,6 +162,13 @@ export const defaultTheme: ThemeObject = {
   'input-icon-success-color': Colors.Success500,
   'input-icon-warning-color': Colors.Warning500,
   'input-icon-danger-color': Colors.Danger500,
+
+  'input-caption-basic-color': Colors.Basic600,
+  'input-caption-primary-color': Colors.Primary500,
+  'input-caption-info-color': Colors.Info500,
+  'input-caption-success-color': Colors.Success500,
+  'input-caption-warning-color': Colors.Warning500,
+  'input-caption-danger-color': Colors.Danger500,
 
   'input-icon-size': rem(24),
 }

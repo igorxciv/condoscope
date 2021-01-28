@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components'
 import { math, rem } from 'polished'
 import { InputProps } from './input.types'
 import { propertyAnimation, visuallyHidden } from '../__design/utils'
-import { StarIcon } from '../icons'
 
 const basic = css<InputProps>`
   ${({ theme }) => css`
@@ -91,18 +90,55 @@ const danger = css`
 const inputAppearances = { basic, info, primary, success, warning, danger }
 
 export const InputGroupStyled = styled.div<InputProps>`
-  display: flex;
-  flex-direction: column;
+  display: grid;
   row-gap: ${rem(8)};
-  position: relative;
+  grid-template-columns: min-content min-content;
 
   ${({ theme }) => css`
     font-family: ${theme['font-family-primary']};
   `}
 `
 
-export const InputStyled = styled.input<InputProps>`
-  ${({ theme, appearance, mass, withStar }) => css`
+export const InputLabelStyled = styled.label`
+  text-transform: uppercase;
+
+  &[aria-hidden="true"] {
+      ${visuallyHidden()}
+  }
+
+  ${({ theme }) => css`
+    color: ${theme['input-label-color']};
+    font-weight: ${theme['font-weight-bold']};
+  `}
+`
+
+export const InputHelpTextStyled = styled.span`
+  ${({ theme }) => css`
+    color: ${theme['input-label-color']};
+    font-size: ${theme['font-size-caption']};
+    align-self: flex-end;
+    justify-self: flex-end;
+  `}
+`
+
+export const InputFieldGroupStyled = styled.div<InputProps>`
+  position: relative;
+  grid-column: 1 / 3;
+
+  ${({ theme, mass, appearance }) => css`
+    svg {
+      width: ${theme['input-icon-size']};
+      height: ${theme['input-icon-size']};
+      position: absolute;
+      right: ${theme['input-horizontal-padding']};
+      bottom: ${theme[`input-${mass}-vertical-padding`]};
+      color: ${theme[`input-icon-${appearance}-color`]};
+    }
+  `}
+`
+
+export const InputFieldStyled = styled.input<InputProps>`
+  ${({ theme, appearance, mass, inputIcon }) => css`
     --background-color: ${theme['input-background']};
 
     border-radius: ${theme['input-radius']};
@@ -117,7 +153,7 @@ export const InputStyled = styled.input<InputProps>`
 
     padding: ${theme[`input-${mass}-vertical-padding`]} ${theme['input-horizontal-padding']};
 
-    ${withStar && css`
+    ${inputIcon && css`
       padding-right: ${math(`${theme['input-horizontal-padding']} + ${theme['input-icon-size']}`)};
     `}
 
@@ -147,26 +183,11 @@ export const InputStyled = styled.input<InputProps>`
   `}
 `
 
-export const InputLabelStyled = styled.span<InputProps>`
-  text-transform: uppercase;
+export const InputCaptionStyled = styled.span<InputProps>`
+  grid-column: 1 / 3;
 
-  &[aria-hidden="true"] {
-    ${visuallyHidden()}
-  }
-
-  ${({ theme }) => css`
-    color: ${theme['input-label-color']};
-    font-weight: ${theme['font-weight-bold']};
-  `}
-`
-
-export const StarIconStyled = styled(StarIcon)<InputProps>`
-  ${({ theme, mass, appearance }) => css`
-    width: ${theme['input-icon-size']};
-    height: ${theme['input-icon-size']};
-    position: absolute;
-    right: ${theme['input-horizontal-padding']};
-    bottom: ${theme[`input-${mass}-vertical-padding`]};
-    color: ${theme[`input-icon-${appearance}-color`]};
+  ${({ theme, appearance }) => css`
+    color: ${theme[`input-caption-${appearance}-color`]};
+    font-size: ${theme['font-size-caption']};
   `}
 `

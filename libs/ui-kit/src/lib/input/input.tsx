@@ -1,26 +1,35 @@
 import React, { FC, PropsWithChildren } from 'react'
-import { InputGroupStyled, InputStyled, InputLabelStyled, StarIconStyled } from './input.styled'
+import { InputGroupStyled, InputLabelStyled, InputHelpTextStyled, InputFieldGroupStyled, InputFieldStyled, InputCaptionStyled } from './input.styled'
 import { InputProps } from './input.types'
 
 export const Input: FC<InputProps> = (props: PropsWithChildren<InputProps>) => {
   const { children, ...restProps } = props
-  const { withStar, kind } = restProps
+  const { inputIcon, kind, caption } = restProps
   const label = children ? (
-    <InputLabelStyled>
+    <InputLabelStyled {...restProps}>
       {children}
     </InputLabelStyled>
   ) : (
-    <InputLabelStyled aria-hidden="true">
+    <InputLabelStyled aria-hidden="true" {...restProps}>
       Empty Label
     </InputLabelStyled>
   )
-  const starIcon = withStar ? <StarIconStyled {...restProps} /> : null
 
   return (
-    <InputGroupStyled>
+    <InputGroupStyled {...restProps}>
       {label}
-      <InputStyled type={kind} {...restProps} />
-      {starIcon}
+      <InputHelpTextStyled {...restProps}>
+        Help
+      </InputHelpTextStyled>
+
+      <InputFieldGroupStyled {...restProps}>
+        <InputFieldStyled type={kind} {...restProps} />
+        {inputIcon}
+      </InputFieldGroupStyled>
+
+      <InputCaptionStyled {...restProps}>
+        {caption}
+      </InputCaptionStyled>
     </InputGroupStyled>
   )
 }

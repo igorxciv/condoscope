@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import { text, boolean, select } from '@storybook/addon-knobs'
 import { Input } from './input'
+import { StarIcon } from '../icons'
 
 export default {
   component: Input,
@@ -55,7 +56,7 @@ export const email: FC = () => {
   )
 }
 
-export const withStar: FC = () => {
+export const withIcon: FC = () => {
   return (
     <Input
       placeholder={text('Placeholder', 'email@me.com')}
@@ -67,7 +68,32 @@ export const withStar: FC = () => {
         Warning: 'warning',
         Danger: 'danger',
       }, 'basic')}
-      withStar
+      inputIcon={<StarIcon />}
+    >
+      {text('Label', 'E-mail')}
+    </Input>
+  )
+}
+
+export const withCaption: FC = () => {
+  return (
+    <Input
+      placeholder={text('Placeholder', 'email@me.com')}
+      appearance={select('Appearance', {
+        Basic: 'basic',
+        Primary: 'primary',
+        Info: 'info',
+        Success: 'success',
+        Warning: 'warning',
+        Danger: 'danger',
+      }, 'basic')}
+      inputIcon={<StarIcon />}
+      caption={
+        <span>
+          <StarIcon width={16} height={16} />
+          Caption text, description, error notification
+        </span>
+      }
     >
       {text('Label', 'E-mail')}
     </Input>

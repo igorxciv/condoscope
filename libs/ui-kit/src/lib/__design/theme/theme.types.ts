@@ -10,6 +10,8 @@ export interface ThemeObject {
   'font-weight-regular': number;
   'font-weight-light': number;
 
+  'font-size-caption': string;
+
   /**
    * Buttons
    */
@@ -297,4 +299,14 @@ export interface ThemeObject {
   'input-icon-success-color': Colors;
   'input-icon-warning-color': Colors;
   'input-icon-danger-color': Colors;
+
+  /**
+   * Input Caption
+   */
+  'input-caption-basic-color': Colors;
+  'input-caption-primary-color': Colors;
+  'input-caption-info-color': Colors;
+  'input-caption-success-color': Colors;
+  'input-caption-warning-color': Colors;
+  'input-caption-danger-color': Colors;
 }
