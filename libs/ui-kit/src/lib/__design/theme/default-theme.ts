@@ -141,9 +141,10 @@ export const defaultTheme: ThemeObject = {
   'input-danger-focus-border-color': Colors.Danger700,
   'input-primary-focus-border-color': Colors.Primary700,
 
-  'input-small-padding': `${rem(3)} ${rem(16)}`,
-  'input-medium-padding': `${rem(7)} ${rem(16)}`,
-  'input-large-padding': `${rem(11)} ${rem(16)}`,
+  'input-horizontal-padding': rem(16),
+  'input-small-vertical-padding': rem(3),
+  'input-medium-vertical-padding': rem(7),
+  'input-large-vertical-padding': rem(11),
 
   'input-hover-background': Colors.Basic300,
   'input-hover-border-color': Colors.Basic400,
@@ -152,4 +153,13 @@ export const defaultTheme: ThemeObject = {
   'input-focus-background': Colors.Basic100,
 
   'input-disabled-color': transparentize(0.52, Colors.Basic600),
+
+  'input-icon-basic-color': Colors.Basic600,
+  'input-icon-primary-color': Colors.Primary500,
+  'input-icon-info-color': Colors.Info500,
+  'input-icon-success-color': Colors.Success500,
+  'input-icon-warning-color': Colors.Warning500,
+  'input-icon-danger-color': Colors.Danger500,
+
+  'input-icon-size': rem(24),
 }

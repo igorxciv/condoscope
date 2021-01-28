@@ -1,7 +1,8 @@
 import styled, { css } from 'styled-components'
-import { rem } from 'polished'
+import { math, rem } from 'polished'
 import { InputProps } from './input.types'
 import { propertyAnimation, visuallyHidden } from '../__design/utils'
+import { StarIcon } from '../icons'
 
 const basic = css<InputProps>`
   ${({ theme }) => css`
@@ -93,6 +94,7 @@ export const InputGroupStyled = styled.label<InputProps>`
   display: flex;
   flex-direction: column;
   row-gap: ${rem(8)};
+  position: relative;
 
   ${({ theme }) => css`
     font-family: ${theme['font-family-primary']};
@@ -100,7 +102,7 @@ export const InputGroupStyled = styled.label<InputProps>`
 `
 
 export const InputStyled = styled.input<InputProps>`
-  ${({ theme, appearance, mass }) => css`
+  ${({ theme, appearance, mass, withStar }) => css`
     --background-color: ${theme['input-background']};
 
     border-radius: ${theme['input-radius']};
@@ -113,7 +115,11 @@ export const InputStyled = styled.input<InputProps>`
     color: ${theme['input-basic-color']};
     background-color: var(--background-color);
 
-    padding: ${theme[`input-${mass}-padding`]};
+    padding: ${theme[`input-${mass}-vertical-padding`]} ${theme['input-horizontal-padding']};
+
+    ${withStar && css`
+      padding-right: ${math(`${theme['input-horizontal-padding']} + ${theme['input-icon-size']}`)};
+    `}
 
     ${propertyAnimation(['background-color', 'border-color'])}
 
@@ -151,5 +157,16 @@ export const InputLabelStyled = styled.span<InputProps>`
   ${({ theme }) => css`
     color: ${theme['input-label-color']};
     font-weight: ${theme['font-weight-bold']};
+  `}
+`
+
+export const StarIconStyled = styled(StarIcon)<InputProps>`
+  ${({ theme, mass, appearance }) => css`
+    width: ${theme['input-icon-size']};
+    height: ${theme['input-icon-size']};
+    position: absolute;
+    right: ${theme['input-horizontal-padding']};
+    bottom: ${theme[`input-${mass}-vertical-padding`]};
+    color: ${theme[`input-icon-${appearance}-color`]};
   `}
 `

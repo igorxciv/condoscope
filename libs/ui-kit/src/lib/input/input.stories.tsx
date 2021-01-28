@@ -54,3 +54,11 @@ export const email: FC = () => {
     </Input>
   )
 }
+
+export const withStar: FC = () => {
+  return (
+    <Input placeholder={text('Placeholder', 'email@me.com')} withStar>
+      {text('Label', 'E-mail')}
+    </Input>
+  )
+}

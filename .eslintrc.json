@@ -78,6 +78,8 @@
         "padding-line-between-statements": ["error", { "blankLine": "always", "prev": "*", "next": "return" }],
         "function-call-argument-newline": ["error", "consistent"],
         "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+        "comma-spacing": ["error", {"before": false, "after": true}],
+        "no-trailing-spaces": "error",
 
         "@typescript-eslint/explicit-module-boundary-types": ["error"],
         "@typescript-eslint/no-explicit-any": ["error"],

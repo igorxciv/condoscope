@@ -253,20 +253,23 @@ export interface ThemeObject {
   /**
    * Sizes
    */
+  'input-horizontal-padding': string;
+  'input-icon-size': string;
+
   /**
    * Small
    */
-  'input-small-padding': string
+  'input-small-vertical-padding': string;
 
   /**
    * Medium
    */
-  'input-medium-padding': string;
+  'input-medium-vertical-padding': string;
 
   /**
    * Large
    */
-  'input-large-padding': string;
+  'input-large-vertical-padding': string;
 
   /**
    * Hover
@@ -284,4 +287,14 @@ export interface ThemeObject {
    * Disabled
    */
   'input-disabled-color': string;
+
+  /**
+   * Input Icons
+   */
+  'input-icon-basic-color': Colors;
+  'input-icon-primary-color': Colors;
+  'input-icon-info-color': Colors;
+  'input-icon-success-color': Colors;
+  'input-icon-warning-color': Colors;
+  'input-icon-danger-color': Colors;
 }
