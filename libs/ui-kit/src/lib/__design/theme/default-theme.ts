@@ -218,4 +218,16 @@ export const defaultTheme: ThemeObject = {
   'checkbox-info-focus-background': transparentize(0.84, Colors.Info500),
   'checkbox-info-focus-border-color': Colors.Info700,
   'checkbox-info-focus-select-border-color': Colors.Info500,
+
+  'checkbox-success-background': transparentize(0.84, Colors.Success500),
+  'checkbox-success-border-color': Colors.Success500,
+  'checkbox-success-select-background': Colors.Success500,
+  'checkbox-success-hover-select-background': Colors.Success500,
+
+  'checkbox-success-hover-background': transparentize(0.84, Colors.Success500),
+  'checkbox-success-hover-border-color': Colors.Success500,
+
+  'checkbox-success-focus-background': transparentize(0.84, Colors.Success500),
+  'checkbox-success-focus-border-color': Colors.Success700,
+  'checkbox-success-focus-select-border-color': Colors.Success500,
 }

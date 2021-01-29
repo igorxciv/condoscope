@@ -362,4 +362,16 @@ export interface ThemeObject {
   'checkbox-info-focus-background': string
   'checkbox-info-focus-border-color': Colors
   'checkbox-info-focus-select-border-color': Colors
+
+  'checkbox-success-background': string
+  'checkbox-success-border-color': Colors
+  'checkbox-success-select-background': Colors
+  'checkbox-success-hover-select-background': Colors
+
+  'checkbox-success-hover-background': string
+  'checkbox-success-hover-border-color': Colors
+
+  'checkbox-success-focus-background': string
+  'checkbox-success-focus-border-color': Colors
+  'checkbox-success-focus-select-border-color': Colors
 }
