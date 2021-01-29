@@ -1,16 +1,13 @@
 import React from 'react'
-import { createRenderer, ShallowRenderer } from 'react-test-renderer/shallow'
-import renderer from 'react-test-renderer'
+import renderer, { ReactTestRenderer } from 'react-test-renderer'
 import { Input } from '../input'
 import 'jest-styled-components'
 
 describe('Input', () => {
-  let shallowRenderer: ShallowRenderer
-  let component
+  let component: ReactTestRenderer
 
   beforeEach(() => {
-    shallowRenderer = createRenderer()
-    component = shallowRenderer.render(
+    component = renderer.create(
       <Input>
         Input
       </Input>,
@@ -23,7 +20,7 @@ describe('Input', () => {
 
   describe('when no children provided', () => {
     beforeEach(() => {
-      component = shallowRenderer.render(<Input />)
+      component = renderer.create(<Input />)
     })
 
     test('renders successfully', () => {
@@ -33,7 +30,7 @@ describe('Input', () => {
 
   describe('when has caption', () => {
     beforeEach(() => {
-      component = shallowRenderer.render(
+      component = renderer.create(
         <Input caption="Caption">
           Input
         </Input>,
@@ -47,7 +44,7 @@ describe('Input', () => {
 
   describe('when disabled', () => {
     beforeEach(() => {
-      component = shallowRenderer.render(
+      component = renderer.create(
         <Input disabled>
           Input
         </Input>,
@@ -55,25 +52,6 @@ describe('Input', () => {
     })
 
     it('renders successfully', () => {
-      expect(component).toMatchSnapshot()
-    })
-  })
-
-  describe('when has icon', () => {
-    beforeEach(() => {
-      component = shallowRenderer.render(
-        <Input icon={
-          <span>
-            icon
-          </span>
-        }
-        >
-          Input
-        </Input>,
-      )
-    })
-
-    test('renders successfully', () => {
       expect(component).toMatchSnapshot()
     })
   })
