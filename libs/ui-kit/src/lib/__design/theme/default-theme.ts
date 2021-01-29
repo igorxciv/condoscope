@@ -242,4 +242,16 @@ export const defaultTheme: ThemeObject = {
   'checkbox-warning-focus-background': transparentize(0.84, Colors.Warning500),
   'checkbox-warning-focus-border-color': Colors.Warning700,
   'checkbox-warning-focus-select-border-color': Colors.Warning500,
+
+  'checkbox-danger-background': transparentize(0.84, Colors.Danger500),
+  'checkbox-danger-border-color': Colors.Danger500,
+  'checkbox-danger-select-background': Colors.Danger500,
+  'checkbox-danger-hover-select-background': Colors.Danger500,
+
+  'checkbox-danger-hover-background': transparentize(0.84, Colors.Danger500),
+  'checkbox-danger-hover-border-color': Colors.Danger500,
+
+  'checkbox-danger-focus-background': transparentize(0.84, Colors.Danger500),
+  'checkbox-danger-focus-border-color': Colors.Danger700,
+  'checkbox-danger-focus-select-border-color': Colors.Danger500,
 }

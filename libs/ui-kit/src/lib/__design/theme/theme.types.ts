@@ -386,4 +386,16 @@ export interface ThemeObject {
   'checkbox-warning-focus-background': string
   'checkbox-warning-focus-border-color': Colors
   'checkbox-warning-focus-select-border-color': Colors
+
+  'checkbox-danger-background': string
+  'checkbox-danger-border-color': Colors
+  'checkbox-danger-select-background': Colors
+  'checkbox-danger-hover-select-background': Colors
+
+  'checkbox-danger-hover-background': string
+  'checkbox-danger-hover-border-color': Colors
+
+  'checkbox-danger-focus-background': string
+  'checkbox-danger-focus-border-color': Colors
+  'checkbox-danger-focus-select-border-color': Colors
 }

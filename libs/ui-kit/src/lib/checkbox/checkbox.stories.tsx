@@ -17,6 +17,8 @@ export const Regular: FC = () => {
         Primary: 'primary',
         Info: 'info',
         Success: 'success',
+        Warning: 'warning',
+        Danger: 'danger',
       }, 'basic')}
     >
       {text('Label', 'Checkbox')}
