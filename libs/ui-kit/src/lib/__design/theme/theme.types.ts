@@ -13,6 +13,7 @@ export interface ThemeObject {
   'font-size-caption': string
   'font-size-label': string
   'font-size-p1': string
+  'font-size-subtitle-s2': string
 
   /**
    * Buttons
@@ -310,4 +311,43 @@ export interface ThemeObject {
   'input-caption-success-color': Colors
   'input-caption-warning-color': Colors
   'input-caption-danger-color': Colors
+
+  /**
+   * Checkbox
+   */
+  /**
+   * Basic
+   */
+  'checkbox-color': Colors
+  'checkbox-focus-outline-color': string
+  'checkbox-checkmark-color': Colors
+
+  'checkbox-basic-background': string
+  'checkbox-basic-border-color': Colors
+  'checkbox-basic-select-background': Colors
+  'checkbox-basic-hover-select-background': Colors
+
+  'checkbox-basic-hover-background': string
+  'checkbox-basic-hover-border-color': Colors
+
+  'checkbox-basic-focus-background': string
+  'checkbox-basic-focus-border-color': Colors
+  'checkbox-basic-focus-select-border-color': Colors
+
+  'checkbox-disabled-background': string
+  'checkbox-disabled-border-color': string
+  'checkbox-disabled-select-background': string
+  'checkbox-disabled-select-border-color': string
+
+  'checkbox-primary-background': string
+  'checkbox-primary-border-color': Colors
+  'checkbox-primary-select-background': Colors
+  'checkbox-primary-hover-select-background': Colors
+
+  'checkbox-primary-hover-background': string
+  'checkbox-primary-hover-border-color': Colors
+
+  'checkbox-primary-focus-background': string
+  'checkbox-primary-focus-border-color': Colors
+  'checkbox-primary-focus-select-border-color': Colors
 }

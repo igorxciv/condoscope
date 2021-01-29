@@ -12,6 +12,7 @@ export const defaultTheme: ThemeObject = {
   'font-size-caption': rem(12),
   'font-size-label': rem(12),
   'font-size-p1': rem(15),
+  'font-size-subtitle-s2': rem(13),
 
   'button-giant-line-height': rem(24),
   'button-large-line-height': rem(24),
@@ -172,4 +173,37 @@ export const defaultTheme: ThemeObject = {
   'input-caption-danger-color': Colors.Danger500,
 
   'input-icon-size': rem(24),
+
+  'checkbox-color': Colors.Basic800,
+  'checkbox-focus-outline-color': transparentize(0.84, Colors.Basic600),
+  'checkbox-checkmark-color': Colors.Basic100,
+
+  'checkbox-basic-background': transparentize(0.84, Colors.Basic600),
+  'checkbox-basic-border-color': Colors.Basic500,
+  'checkbox-basic-select-background': Colors.Primary500,
+  'checkbox-basic-hover-select-background': Colors.Primary400,
+
+  'checkbox-basic-hover-background': transparentize(0.84, Colors.Primary500),
+  'checkbox-basic-hover-border-color': Colors.Primary500,
+
+  'checkbox-basic-focus-background': transparentize(0.6, Colors.Basic600),
+  'checkbox-basic-focus-border-color': Colors.Basic600,
+  'checkbox-basic-focus-select-border-color': Colors.Primary700,
+
+  'checkbox-disabled-background': transparentize(0.92, Colors.Basic600),
+  'checkbox-disabled-border-color': transparentize(0.52, Colors.Basic600),
+  'checkbox-disabled-select-background': transparentize(0.52, Colors.Basic500),
+  'checkbox-disabled-select-border-color': transparentize(0.52, Colors.Basic500),
+
+  'checkbox-primary-background': transparentize(0.84, Colors.Primary500),
+  'checkbox-primary-border-color': Colors.Primary500,
+  'checkbox-primary-select-background': Colors.Primary500,
+  'checkbox-primary-hover-select-background': Colors.Primary500,
+
+  'checkbox-primary-hover-background': transparentize(0.84, Colors.Primary500),
+  'checkbox-primary-hover-border-color': Colors.Primary500,
+
+  'checkbox-primary-focus-background': transparentize(0.84, Colors.Primary500),
+  'checkbox-primary-focus-border-color': Colors.Primary700,
+  'checkbox-primary-focus-select-border-color': Colors.Primary500,
 }
