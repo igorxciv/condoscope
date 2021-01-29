@@ -205,7 +205,7 @@ export const defaultTheme: ThemeObject = {
 
   'checkbox-primary-focus-background': transparentize(0.84, Colors.Primary500),
   'checkbox-primary-focus-border-color': Colors.Primary700,
-  'checkbox-primary-focus-select-border-color': Colors.Primary500,
+  'checkbox-primary-focus-select-border-color': Colors.Primary700,
 
   'checkbox-info-background': transparentize(0.84, Colors.Info500),
   'checkbox-info-border-color': Colors.Info500,
@@ -217,7 +217,7 @@ export const defaultTheme: ThemeObject = {
 
   'checkbox-info-focus-background': transparentize(0.84, Colors.Info500),
   'checkbox-info-focus-border-color': Colors.Info700,
-  'checkbox-info-focus-select-border-color': Colors.Info500,
+  'checkbox-info-focus-select-border-color': Colors.Info700,
 
   'checkbox-success-background': transparentize(0.84, Colors.Success500),
   'checkbox-success-border-color': Colors.Success500,
@@ -229,7 +229,7 @@ export const defaultTheme: ThemeObject = {
 
   'checkbox-success-focus-background': transparentize(0.84, Colors.Success500),
   'checkbox-success-focus-border-color': Colors.Success700,
-  'checkbox-success-focus-select-border-color': Colors.Success500,
+  'checkbox-success-focus-select-border-color': Colors.Success700,
 
   'checkbox-warning-background': transparentize(0.84, Colors.Warning500),
   'checkbox-warning-border-color': Colors.Warning500,
@@ -241,7 +241,7 @@ export const defaultTheme: ThemeObject = {
 
   'checkbox-warning-focus-background': transparentize(0.84, Colors.Warning500),
   'checkbox-warning-focus-border-color': Colors.Warning700,
-  'checkbox-warning-focus-select-border-color': Colors.Warning500,
+  'checkbox-warning-focus-select-border-color': Colors.Warning700,
 
   'checkbox-danger-background': transparentize(0.84, Colors.Danger500),
   'checkbox-danger-border-color': Colors.Danger500,
@@ -253,5 +253,5 @@ export const defaultTheme: ThemeObject = {
 
   'checkbox-danger-focus-background': transparentize(0.84, Colors.Danger500),
   'checkbox-danger-focus-border-color': Colors.Danger700,
-  'checkbox-danger-focus-select-border-color': Colors.Danger500,
+  'checkbox-danger-focus-select-border-color': Colors.Danger700,
 }
