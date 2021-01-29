@@ -6,6 +6,6 @@ export type InputProps = {
   appearance?: 'basic' | 'success' | 'info' | 'warning' | 'danger' | 'primary'
   placeholder?: string
   disabled?: boolean
-  inputIcon?: React.ReactNode
+  icon?: React.ReactNode
   caption?: React.ReactNode
 }

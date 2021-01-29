@@ -5,6 +5,7 @@ exports[`Button Filled renders successfully 1`] = `
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  width: 100%;
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
   -webkit-transition-property: background-color border-color;
@@ -32,6 +33,7 @@ exports[`Button Ghost renders successfully 1`] = `
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  width: 100%;
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
   -webkit-transition-property: background-color border-color;
@@ -58,6 +60,7 @@ exports[`Button Outline renders successfully 1`] = `
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  width: 100%;
   -webkit-transition-duration: 0.15s;
   transition-duration: 0.15s;
   -webkit-transition-property: background-color border-color;

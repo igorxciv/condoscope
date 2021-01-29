@@ -142,8 +142,8 @@ export const InputFieldGroupStyled = styled.div<Pick<InputProps, 'mass' | 'appea
   `}
 `
 
-export const InputFieldStyled = styled.input<Pick<InputProps, 'appearance' | 'mass' | 'inputIcon'>>`
-  ${({ theme, appearance, mass, inputIcon }) => css`
+export const InputFieldStyled = styled.input<Pick<InputProps, 'appearance' | 'mass' | 'icon'>>`
+  ${({ theme, appearance, mass, icon }) => css`
     --background-color: ${theme['input-background']};
 
     border-radius: ${theme['input-radius']};
@@ -160,7 +160,7 @@ export const InputFieldStyled = styled.input<Pick<InputProps, 'appearance' | 'ma
 
     padding: ${theme[`input-${mass}-vertical-padding`]} ${theme['input-horizontal-padding']};
 
-    ${inputIcon && css`
+    ${icon && css`
       padding-right: ${math(`${theme['input-horizontal-padding']} + ${theme['input-icon-size']}`)};
     `}
 
