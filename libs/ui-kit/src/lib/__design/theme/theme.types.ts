@@ -350,4 +350,16 @@ export interface ThemeObject {
   'checkbox-primary-focus-background': string
   'checkbox-primary-focus-border-color': Colors
   'checkbox-primary-focus-select-border-color': Colors
+
+  'checkbox-info-background': string
+  'checkbox-info-border-color': Colors
+  'checkbox-info-select-background': Colors
+  'checkbox-info-hover-select-background': Colors
+
+  'checkbox-info-hover-background': string
+  'checkbox-info-hover-border-color': Colors
+
+  'checkbox-info-focus-background': string
+  'checkbox-info-focus-border-color': Colors
+  'checkbox-info-focus-select-border-color': Colors
 }

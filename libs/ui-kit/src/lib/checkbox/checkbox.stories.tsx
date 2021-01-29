@@ -15,6 +15,7 @@ export const Regular: FC = () => {
       appearance={select('Appearance', {
         Basic: 'basic',
         Primary: 'primary',
+        Info: 'info',
       }, 'basic')}
     >
       {text('Label', 'Checkbox')}
